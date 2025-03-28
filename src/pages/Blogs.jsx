@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const Blogs = () => {
   return (
-    <div className="pt-[10rem] pb-[4rem] bg-gradient-to-b from-[#f8e4de] to-[#f5f5f5]">
+    <div className="pt-[10rem] pb-[4rem] bg-gradient-to-b from-secondary to-[#f5f5f5]">
       <div className="wrapper">
         <h1 data-aos="fade-up" className="section-heading text-center">
           Blogs

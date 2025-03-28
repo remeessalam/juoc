@@ -126,8 +126,8 @@ const AboutUs = () => {
               />
               <div className="py-[3rem] px-7 sm:aspect-square flex flex-col justify-between bg-gradient-to-tr sm:p-7 from-[#992FED] to-[#2F80ED]">
                 <h4 className="text-xl font-semibold text-white">
-                  AI Company Partners with Optimizely for Enhanced Digital
-                  Experiences
+                  JUOC Solutions LLP Partners with Optimizely for Enhanced
+                  Digital Experiences
                 </h4>
                 <Link
                   to="/contact"

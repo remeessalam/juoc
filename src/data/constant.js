@@ -26,10 +26,10 @@ export { logo };
 
 // company
 export const companyDetails = {
-  name: "AI Company",
+  name: "JUOC Solutions LLP",
   address:
     " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non voluptatem vero aut earum molestias recusandae.",
-  phone: "+0000000000",
+  phone: "+91-8590971792",
   email: "abc@example.com",
 };
 

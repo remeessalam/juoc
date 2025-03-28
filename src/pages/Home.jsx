@@ -202,7 +202,7 @@ const Home = () => {
       </section>
       <section className="pt-[4rem]">
         <h2 data-aos="fade-up" className="wrapper section-heading text-center">
-          How AI Company helps you deliver the best results
+          How JUOC Solutions LLP helps you deliver the best results
         </h2>
         <div
           data-aos="fade-up"

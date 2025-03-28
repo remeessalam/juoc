@@ -280,7 +280,7 @@ export const services = [
               your online presence. It’s more than just a digital storefront –
               it’s your brand’s first impression, your sales engine, and a
               platform to engage and inform your audience. At
-              <span class="font-semibold">AI Company</span>, we specialize
+              <span class="font-semibold">JUOC Solutions LLP</span>, we specialize
               in creating visually appealing, high-performing, and secure websites
               that deliver an exceptional user experience while aligning with your
               business goals.
