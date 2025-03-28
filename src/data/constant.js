@@ -28,7 +28,7 @@ export { logo };
 export const companyDetails = {
   name: "JUOC Solutions LLP",
   address:
-    " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non voluptatem vero aut earum molestias recusandae.",
+    "UNIT 101 , OXFORD TOWERS , 139 HAL OLD AIRPORT RD, KODIHALLI BANGALORE, KARNATAKA INDIA , 560008",
   phone: "+91-8590971792",
   email: "abc@example.com",
 };
