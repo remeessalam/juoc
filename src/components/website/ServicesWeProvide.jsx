@@ -26,7 +26,7 @@ const ServicesWeProvide = () => {
                   <p className="text-xl font-medium text-white group-hover:text-black">
                     {item.title}
                   </p>
-                  <item.image className="object-contain text-white group-hover:text-black w-1/2 block sm:hidden" />
+                  <item.image className="object-contain max-h-[5rem] fill-current !text-white group-hover:text-black w-1/2 block sm:hidden" />
                   {/* <img
                     src={item.image}
                     className="object-contain w-1/2 block sm:hidden"
