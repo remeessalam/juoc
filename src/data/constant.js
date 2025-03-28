@@ -18,21 +18,21 @@ export const workingProcess = [
     step: 1,
     title: "Requirement Gathering & Analysis",
     description:
-      "In this phase, we work closely with clients to thoroughly understand their needs and objectives. Our team engages in detailed discussions to define the project's goals and scope, ensuring that all technical and business requirements are clearly documented and analyzed for feasibility.",
+      "We collaborate closely with clients to thoroughly understand their business goals, challenges, and technical requirements. By conducting detailed consultations and feasibility studies, we ensure that the project objectives are clear and achievable. Our team documents all requirements to create a solid foundation for the development process.",
     icon: NotebookPen,
   },
   {
     step: 2,
     title: "Design & Development",
     description:
-      "Our expert designers create intuitive, user-friendly interfaces while ensuring that the overall user experience remains seamless. The development team then builds robust, scalable, and efficient solutions, adhering to industry best practices and using cutting-edge technologies to meet client expectations.",
+      "Utilizing cutting-edge technologies and industry best practices, our team designs intuitive and user-centric solutions. We specialize in blockchain, AI, app development, RPA, cloud computing, and web solutions. Each solution is tailored to meet the unique needs of our clients, ensuring seamless performance and scalability.",
     icon: CodeXml,
   },
   {
     step: 3,
     title: "Testing & Deployment",
     description:
-      "This phase involves rigorous testing of the software to identify and fix any bugs or performance issues. We conduct various quality assurance checks to ensure the product meets the highest standards. Once finalized, we deploy the solution and provide continuous support to ensure smooth operations.",
+      "Before deployment, we conduct rigorous testing to identify and resolve any issues. Our quality assurance team performs comprehensive functional, performance, and security testing. Upon successful validation, we proceed with deployment and offer continuous support to ensure smooth operations and long-term success.",
     icon: Rocket,
   },
 ];
@@ -104,43 +104,27 @@ export const appDevelopmentServices = [
 // testimonials
 export const testimonials = [
   {
-    name: "Sarah M",
-    position: "Marketing Director, SecureChain Innovations",
-    desc: `Our experience with AI Company was excellent. They completely 
-understood our vision and delivered a beautifully designed website that truly 
-represents our brand. The team was efficient, responsive, and made the entire 
-process easy. Since launching, we've seen a noticeable increase in website traffic 
-and user engagement. We’re thrilled with the outcome!`,
+    name: "Priya R.",
+    position: "Operations Head, SmartChain Solutions",
+    desc: `Working with JUOC Solutions LLP was a game-changer for our blockchain integration. Their team delivered a secure and efficient blockchain solution that streamlined our operations. The transparency and reliability of the system have significantly improved our business processes. Highly recommended!`,
     img: require("../assets/images/testimonials/1.jpg"),
   },
   {
-    name: "Mark T.",
-    position: "Product Manager, FinTech Group",
-    desc: `The UX/UI design team at AI Company did an outstanding job on our 
-project. They took the time to understand our users’ needs and delivered a design 
-that is both functional and visually appealing. Our users find the interface intuitive 
-and easy to navigate, and as a result, our engagement rates have improved 
-significantly.`,
+    name: "Arjun M.",
+    position: "Product Manager, FinTech Innovations",
+    desc: `JUOC Solutions LLP’s AI and Machine Learning solutions transformed our data analytics capabilities. Their predictive models provided invaluable insights, helping us make data-driven decisions with confidence. Their team’s expertise and dedication made all the difference.`,
     img: require("../assets/images/testimonials/2.jpg"),
   },
   {
-    name: "Jason K",
-    position: "Creative Director, PlayX Studios",
-    desc: `We worked with AI Company to develop a mobile and console game, 
-and the results were fantastic. From the initial concept to the final product, their 
-team was incredibly creative and professional. The game is fun, engaging, and has 
-received great reviews from players. We couldn’t be more pleased with the 
-outcome and look forward to future collaborations.`,
+    name: "Meera S.",
+    position: "Creative Director, GameSphere Studios",
+    desc: `Our experience with JUOC Solutions LLP in game development was fantastic. They brought our vision to life with a captivating 3D game that exceeded our expectations. The user experience is immersive, and player feedback has been overwhelmingly positive.`,
     img: require("../assets/images/testimonials/3.jpg"),
   },
   {
-    name: "Thomas P",
-    position: "Managing Director, TechFlow Solutions",
-    desc: `From the very beginning, we knew we found the right team at AI Company.
-    They worked closely with us to develop a mobile app that was user-friendly 
-and fully aligned with our business objectives. Their expertise in blockchain also 
-helped streamline our operations, and the results speak for themselves. We’ve seen 
-substantial growth in our business thanks to their tailored solutions`,
+    name: "Ravi K.",
+    position: "CEO, AutomateTech Solutions",
+    desc: `JUOC Solutions LLP’s RPA implementation automated our repetitive tasks, saving us time and reducing human error. The efficiency gains were noticeable almost immediately, and their support throughout the process was exceptional.`,
     img: require("../assets/images/testimonials/4.jpg"),
   },
 ];

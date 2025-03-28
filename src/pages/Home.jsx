@@ -99,13 +99,14 @@ const Home = () => {
               data-aos="fade-up"
               className="flex items-center text-start self-start text-white px-3 py-2 rounded-full border border-white"
             >
-              <CodeXml className="inline mr-2" /> <span>IT & AI Services</span>
+              <CodeXml className="inline mr-2" />{" "}
+              <span>Blockchain, AI & Development Solutions</span>
             </div>
             <h1 data-aos="fade-up" className="heading text-white">
-              Welcome to <span className="">AI Company – </span>
+              Welcome to <span className="">JUOC Solutions LLP – </span>
               <br />
               <span className="text-secondary">
-                Empowering Your Digital Growth
+                Empowering Your Digital Transformation
               </span>
             </h1>
             <div
@@ -210,27 +211,27 @@ const Home = () => {
           {[
             {
               title: "Collaborative Partnerships",
-              desc: "We foster strong partnerships by working closely with clients, ensuring alignment with your vision and delivering results that exceed expectations.",
+              desc: "We build strong relationships by working closely with clients, aligning with your vision, and delivering tailored solutions that exceed expectations.",
               styles: "bg-[#7C42DA] lg:rotate-[-18deg] lg:translate-y-[8rem]",
             },
             {
-              title: "Agility and Adaptability",
-              desc: "Our team thrives on flexibility, quickly adapting to changing requirements and industry trends to keep your business ahead of the curve.",
+              title: "Innovative Solutions",
+              desc: "Our experts leverage cutting-edge technology to provide innovative and scalable solutions, keeping your business ahead of the competition.",
               styles: "bg-[#F8B000] lg:rotate-[-10deg] lg:translate-y-[3rem]",
             },
             {
-              title: "Commitment to Quality",
-              desc: "Quality is at the heart of everything we do, from initial planning to final delivery, ensuring solutions that stand the test of time.",
+              title: "Commitment to Excellence",
+              desc: "We ensure high-quality solutions with meticulous attention to detail, from concept to deployment, delivering long-lasting results.",
               styles: "bg-[#B94391]",
             },
             {
-              title: "Customer Satisfaction",
-              desc: "Your satisfaction is our top priority. We go the extra mile to ensure our solutions not only meet but exceed your expectations.",
+              title: "Customer-Centric Approach",
+              desc: "Your satisfaction drives us. We customize our solutions to fit your specific needs, ensuring exceptional results every time.",
               styles: "bg-[#D1B9F7] lg:rotate-[10deg] lg:translate-y-[3rem]",
             },
             {
               title: "Transparency and Accountability",
-              desc: "We maintain open communication, provide regular updates, and take responsibility for delivering on our commitments to ensure your trust and confidence.",
+              desc: "We maintain open communication and provide regular updates, ensuring trust and confidence in our collaborative process.",
               styles:
                 "bg-[#E85535] col-span-2 md:col-span-1 w-1/2 mx-auto md:w-full lg:rotate-[18deg] lg:translate-y-[8rem]",
             },
@@ -289,11 +290,12 @@ const Home = () => {
             <div className="flex flex-col md:w-8/12 lg:w-9/12">
               <div className="md:px-[2.5rem]">
                 <p className="md:text-lg text-white font-semibold">
-                  Our team combines creativity, technical expertise, and a
-                  passion for excellence to bring your vision to life. With
-                  attention to detail and a client-first approach, we ensure
-                  every project meets your unique requirements and delivers
-                  lasting results.
+                  At JUOC Solutions LLP, our team of skilled professionals
+                  combines innovative thinking, technical expertise, and a
+                  passion for excellence to transform your vision into reality.
+                  We work collaboratively with our clients to ensure every
+                  solution is tailored to your unique requirements and delivers
+                  sustainable value.
                 </p>
                 <Quote
                   className="size-10 fill-white/20 self-end mt-3"
@@ -315,10 +317,12 @@ const Home = () => {
             <div className="flex flex-col md:w-8/12 lg:w-9/12">
               <div className="md:px-[2.5rem]">
                 <p className="md:text-lg text-white font-semibold">
-                  At AI Company, we deliver excellence across web and app
-                  development, UI/UX design, game development, and blockchain
-                  solutions. Our expertise ensures innovative, scalable results
-                  tailored to your goals.
+                  At JUOC Solutions LLP, we empower your digital journey with
+                  end-to-end technology solutions. From robust web and mobile
+                  applications, intuitive UI/UX design, and immersive game
+                  development to secure blockchain systems, our expertise drives
+                  innovative and scalable outcomes tailored to your business
+                  objectives.
                 </p>
                 <Quote
                   className="size-10 fill-white/20 self-end mt-3"
@@ -340,10 +344,11 @@ const Home = () => {
             <div className="flex flex-col md:w-8/12 lg:w-9/12">
               <div className="md:px-[2.5rem]">
                 <p className="md:text-lg text-white font-semibold">
-                  Transform your digital presence with our robust web and app
-                  solutions. From feature-rich websites to high-performing
-                  mobile apps, we ensure seamless functionality and cutting-edge
-                  design to achieve your business goals.
+                  Transform your digital presence with JUOC Solutions LLP’s
+                  comprehensive web and app development services. Our custom
+                  solutions—from dynamic websites to high-performance mobile
+                  applications—are engineered to enhance user engagement and
+                  drive business growth.
                 </p>
                 <Quote
                   className="size-10 fill-white/20 self-end mt-3"
@@ -365,10 +370,11 @@ const Home = () => {
             <div className="flex flex-col md:w-8/12 lg:w-9/12">
               <div className="md:px-[2.5rem]">
                 <p className="md:text-lg text-white font-semibold">
-                  At AI Company, we deliver tailored solutions across
-                  industries. From enhancing patient care in Healthcare to
-                  empowering E-commerce and driving innovation in Technology, we
-                  cater to diverse business needs with precision.
+                  At JUOC Solutions LLP, we provide tailored technology
+                  solutions across diverse industries. From enhancing patient
+                  care in healthcare to empowering e-commerce and driving
+                  innovation in technology, we address your unique business
+                  challenges with precision and excellence.
                 </p>
                 <Quote
                   className="size-10 fill-white/20 self-end mt-3"
@@ -384,6 +390,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+
       <BlogsSection />
       <ContactForm />
     </>
