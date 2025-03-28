@@ -154,7 +154,7 @@ const LandingPage = ({ page }) => {
                   key={item.title}
                   className="text-center p-5 bg-white rounded-xl space-y-3"
                 >
-                  <IconComponent className="w-8 h-8 mx-auto text-secondary" />
+                  <IconComponent className="w-8 h-8 mx-auto text-primary" />
                   <p className="font-medium text-[.9rem] whitespace-pre-line">
                     {item.title}
                   </p>
