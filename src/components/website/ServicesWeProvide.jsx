@@ -15,21 +15,26 @@ const ServicesWeProvide = () => {
           <Link
             key={item.title}
             to={`/services/${item.title}`}
-            className={`group h-full overflow-hidden space-y-6 odd:bg-secondary/70 even:bg-primary/70 odd:hover:bg-primary/70 even:hover:bg-secondary/70 p-5 rounded-xl transition-all duration-300 ${
-              i === 2 ? "md:order-3 md:col-span-2 md:w-1/2 md:mx-auto" : ""
-            }`}
+            className={`group h-full group overflow-hidden space-y-6 bg-primary/80 hover:bg-primary/20 p-5 rounded-xl transition-all duration-300 `}
           >
+            {/* ${
+              i === 2 ? "md:order-3 md:col-span-2 md:w-1/2 md:mx-auto" : ""
+            } */}
             <div className="grid sm:grid-cols-[70%_auto] h-full items-center gap-4">
               <div className="h-full flex flex-col gap-3 justify-between">
                 <div className="space-y-3">
-                  <p className="text-xl font-medium">{item.title}</p>
-                  <item.image className="object-contain w-1/2 block sm:hidden" />
+                  <p className="text-xl font-medium text-white group-hover:text-black">
+                    {item.title}
+                  </p>
+                  <item.image className="object-contain text-white group-hover:text-black w-1/2 block sm:hidden" />
                   {/* <img
                     src={item.image}
                     className="object-contain w-1/2 block sm:hidden"
                     alt={item.title}
                   /> */}
-                  <p>{item.shortDesc}</p>
+                  <p className="text-white group-hover:text-black">
+                    {item.shortDesc}
+                  </p>
                 </div>
                 <div className="mt-2 flex gap-2 flex-wrap">
                   {item.technologies.map((tech) => (
@@ -43,9 +48,7 @@ const ServicesWeProvide = () => {
                 </div>
               </div>
               <item.image
-                className={`w-20 h-20 sm:block hidden  fill-current ${
-                  item.id % 2 === 0 ? "text-black" : " text-white"
-                }`}
+                className={`w-20 h-20 sm:block hidden  fill-current !text-white group-hover:!text-black`}
               />
 
               {/* <img
