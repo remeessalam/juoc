@@ -16,6 +16,7 @@ export const services = [
     id: 1,
     title: "Blockchain Development",
     image: Blockchain,
+    color: "#3F51B5", // Added color
     shortDesc:
       "Secure, transparent, and scalable blockchain solutions tailored to empower your business.",
     technologies: ["Ethereum", "Solidity", "Hyperledger", "Node.js", "React"],
@@ -51,6 +52,7 @@ export const services = [
     id: 2,
     title: "Game Development",
     image: GameDevelopment,
+    color: "#FF5722", // Added color
     shortDesc:
       "Creating immersive, engaging, and dynamic gaming experiences for mobile, PC, and consoles.",
     technologies: ["Unity", "Unreal Engine", "C#", "Blender", "JavaScript"],
@@ -86,6 +88,7 @@ export const services = [
     id: 3,
     title: "App Development",
     image: AppDevelopment,
+    color: "#4CAF50", // Added color
     shortDesc:
       "Developing intuitive and powerful mobile apps for iOS, Android, and cross-platform solutions.",
     technologies: ["React Native", "Flutter", "Swift", "Kotlin", "Xamarin"],
@@ -97,7 +100,7 @@ export const services = [
     html: {
       firstSection: `<h2 class="text-xl font-semibold mb-4">Empowering Your Business with Robust Mobile Solutions</h2>
             <p class="mb-10">
-              In today’s mobile-driven world, our expert team develops user-friendly mobile apps that seamlessly integrate with your business goals.
+              In today's mobile-driven world, our expert team develops user-friendly mobile apps that seamlessly integrate with your business goals.
             </p>`,
       secondSection: `<h2 class="text-xl font-semibold mb-4">Our App Development Services:</h2>
             <ul class="list-disc pl-6">
@@ -121,6 +124,7 @@ export const services = [
     id: 4,
     title: "Robotic Process Automation (RPA)",
     image: RPA,
+    color: "#673AB7", // Added color
     shortDesc:
       "Automating repetitive tasks to boost efficiency and reduce errors through tailored RPA solutions.",
     technologies: [
@@ -161,6 +165,7 @@ export const services = [
     id: 5,
     title: "Artificial Intelligence Development",
     image: AI,
+    color: "#2196F3", // Added color
     shortDesc:
       "Integrating intelligent AI solutions to transform decision-making and enhance customer engagement.",
     technologies: ["TensorFlow", "PyTorch", "Keras", "scikit-learn", "OpenCV"],
@@ -195,6 +200,7 @@ export const services = [
     id: 6,
     title: "Machine Learning Services",
     image: MachineLearning,
+    color: "#9C27B0", // Added color
     shortDesc:
       "Leveraging advanced machine learning models to unlock actionable insights from your data.",
     technologies: ["Python", "scikit-learn", "TensorFlow", "PyTorch", "Keras"],
@@ -229,6 +235,7 @@ export const services = [
     id: 7,
     title: "Cloud Computing Services",
     image: CloudComputing,
+    color: "#194458", // Added color
     shortDesc:
       "Scalable, secure, and cost-effective cloud solutions designed to power your business growth.",
     technologies: ["AWS", "Azure", "Google Cloud", "Docker", "Kubernetes"],
@@ -263,6 +270,7 @@ export const services = [
     id: 8,
     title: "Web Development",
     image: WebDevelopment,
+    color: "#E91E63", // Added color
     shortDesc:
       "Building responsive, scalable, and modern websites tailored to your business needs.",
     technologies: ["React", "Angular", "Node", "Express", "MongoDB"],
@@ -276,9 +284,9 @@ export const services = [
               Create a Strong Online Presence with Our Tailored Web Solutions
             </h2>
             <p class="mb-10">
-              In today’s digital era, your website serves as the cornerstone of
-              your online presence. It’s more than just a digital storefront –
-              it’s your brand’s first impression, your sales engine, and a
+              In today's digital era, your website serves as the cornerstone of
+              your online presence. It's more than just a digital storefront –
+              it's your brand's first impression, your sales engine, and a
               platform to engage and inform your audience. At
               <span class="font-semibold">JUOC Solutions LLP</span>, we specialize
               in creating visually appealing, high-performing, and secure websites
@@ -338,7 +346,7 @@ export const services = [
                   </li>
                   <li class="mb-3">
                     <span class="font-semibold">Scalable Solutions:</span> Whether
-                    you’re a startup or an enterprise, our websites are designed
+                    you're a startup or an enterprise, our websites are designed
                     to grow with your business.
                   </li>
                   <li class="mb-3">
@@ -359,6 +367,7 @@ export const services = [
     id: 9,
     title: "Data Science Services",
     image: DataScience,
+    color: "#00BCD4", // Added color
     shortDesc:
       "Unlocking valuable insights from your data through advanced analytics and visualization techniques.",
     technologies: ["Python", "R", "SQL", "Pandas", "Tableau"],
@@ -393,6 +402,7 @@ export const services = [
     id: 10,
     title: "Natural Language Processing (NLP)",
     image: NLP,
+    color: "#8BC34A", // Added color
     shortDesc:
       "Developing intelligent NLP solutions to automate customer interactions and derive insights from text data.",
     technologies: ["NLTK", "spaCy", "BERT", "GPT", "Transformers"],
@@ -427,6 +437,7 @@ export const services = [
     id: 11,
     title: "Cloud Migration Services",
     image: CloudMigration,
+    color: "#6b18ff", // Added color
     shortDesc:
       "End-to-end cloud migration services to ensure a smooth and secure transition for your business.",
     technologies: ["AWS", "Azure", "Google Cloud", "VMware", "Docker"],
@@ -437,30 +448,31 @@ export const services = [
     },
     html: {
       firstSection: `<h2 class="text-xl font-semibold mb-4">Seamless Transition to the Cloud</h2>
-            <p class="mb-10">
-              We offer comprehensive cloud migration services, ensuring your data, applications, and systems are transitioned securely and efficiently.
-            </p>`,
+               <p class="mb-10">
+                 We offer comprehensive cloud migration services, ensuring your data, applications, and systems are transitioned securely and efficiently.
+               </p>`,
       secondSection: `<h2 class="text-xl font-semibold mb-4">Our Cloud Migration Services:</h2>
-            <ul class="list-disc pl-6">
-              <li class="mb-3"><span class="font-semibold">Cloud Readiness Assessment & Strategy:</span> Evaluate and plan your migration journey.</li>
-              <li class="mb-3"><span class="font-semibold">Application & Data Migration:</span> Securely transfer your assets to the cloud.</li>
-              <li class="mb-3"><span class="font-semibold">Post-Migration Optimization & Support:</span> Ensure your systems are running at peak performance.</li>
-              <li class="mb-3"><span class="font-semibold">Multi-Cloud & Hybrid Solutions:</span> Flexible strategies to suit your needs.</li>
-              <li class="mb-3"><span class="font-semibold">Infrastructure Monitoring & Management:</span> Proactive management for uninterrupted service.</li>
-            </ul>`,
+               <ul class="list-disc pl-6">
+                 <li class="mb-3"><span class="font-semibold">Cloud Readiness Assessment & Strategy:</span> Evaluate and plan your migration journey.</li>
+                 <li class="mb-3"><span class="font-semibold">Application & Data Migration:</span> Securely transfer your assets to the cloud.</li>
+                 <li class="mb-3"><span class="font-semibold">Post-Migration Optimization & Support:</span> Ensure your systems are running at peak performance.</li>
+                 <li class="mb-3"><span class="font-semibold">Multi-Cloud & Hybrid Solutions:</span> Flexible strategies to suit your needs.</li>
+                 <li class="mb-3"><span class="font-semibold">Infrastructure Monitoring & Management:</span> Proactive management for uninterrupted service.</li>
+               </ul>`,
       thirdSection: `<h2 class="text-xl font-semibold mb-4">Advantages of Our Cloud Migration:</h2>
-            <ul class="list-disc pl-6">
-              <li class="mb-3"><span class="font-semibold">Smooth Transition:</span> Minimal downtime and disruption.</li>
-              <li class="mb-3"><span class="font-semibold">Enhanced Performance:</span> Optimized cloud environments for efficiency.</li>
-              <li class="mb-3"><span class="font-semibold">Secure Migration:</span> Data integrity and security are our top priorities.</li>
-              <li class="mb-3"><span class="font-semibold">Expert Guidance:</span> Support throughout your migration journey.</li>
-            </ul>`,
+               <ul class="list-disc pl-6">
+                 <li class="mb-3"><span class="font-semibold">Smooth Transition:</span> Minimal downtime and disruption.</li>
+                 <li class="mb-3"><span class="font-semibold">Enhanced Performance:</span> Optimized cloud environments for efficiency.</li>
+                 <li class="mb-3"><span class="font-semibold">Secure Migration:</span> Data integrity and security are our top priorities.</li>
+                 <li class="mb-3"><span class="font-semibold">Expert Guidance:</span> Support throughout your migration journey.</li>
+               </ul>`,
     },
   },
   {
     id: 12,
     title: "UI/UX Design",
     image: UIUX,
+    color: "#607D8B", // Added color
     shortDesc:
       "Designing visually appealing and user-friendly interfaces that enhance engagement and drive results.",
     technologies: ["Sketch", "Adobe XD", "Figma", "InVision", "Zeplin"],
@@ -471,24 +483,24 @@ export const services = [
     },
     html: {
       firstSection: `<h2 class="text-xl font-semibold mb-4">Crafting Exceptional Digital Experiences with User-Centric Design</h2>
-            <p class="mb-10">
-              Our UI/UX team focuses on creating intuitive interfaces that not only look great but also offer an exceptional user experience.
-            </p>`,
+               <p class="mb-10">
+                 Our UI/UX team focuses on creating intuitive interfaces that not only look great but also offer an exceptional user experience.
+               </p>`,
       secondSection: `<h2 class="text-xl font-semibold mb-4">Our UI/UX Design Services:</h2>
-            <ul class="list-disc pl-6">
-              <li class="mb-3"><span class="font-semibold">User Research & Persona Development:</span> Understand your audience deeply.</li>
-              <li class="mb-3"><span class="font-semibold">Wireframing, Prototyping & Interaction Design:</span> Bring your vision to life.</li>
-              <li class="mb-3"><span class="font-semibold">Visual Design & Branding:</span> Create a memorable brand identity.</li>
-              <li class="mb-3"><span class="font-semibold">Usability Testing & Feedback Analysis:</span> Refine designs through continuous testing.</li>
-              <li class="mb-3"><span class="font-semibold">Mobile & Web UI/UX Design:</span> Consistent experiences across all platforms.</li>
-            </ul>`,
+               <ul class="list-disc pl-6">
+                 <li class="mb-3"><span class="font-semibold">User Research & Persona Development:</span> Understand your audience deeply.</li>
+                 <li class="mb-3"><span class="font-semibold">Wireframing, Prototyping & Interaction Design:</span> Bring your vision to life.</li>
+                 <li class="mb-3"><span class="font-semibold">Visual Design & Branding:</span> Create a memorable brand identity.</li>
+                 <li class="mb-3"><span class="font-semibold">Usability Testing & Feedback Analysis:</span> Refine designs through continuous testing.</li>
+                 <li class="mb-3"><span class="font-semibold">Mobile & Web UI/UX Design:</span> Consistent experiences across all platforms.</li>
+               </ul>`,
       thirdSection: `<h2 class="text-xl font-semibold mb-4">Why Choose Our UI/UX Services?</h2>
-            <ul class="list-disc pl-6">
-              <li class="mb-3"><span class="font-semibold">Engaging Interfaces:</span> Designs that captivate your users.</li>
-              <li class="mb-3"><span class="font-semibold">Enhanced User Experience:</span> Intuitive, user-focused design strategies.</li>
-              <li class="mb-3"><span class="font-semibold">Tailored to Your Audience:</span> Customized solutions that reflect your brand.</li>
-              <li class="mb-3"><span class="font-semibold">Continuous Improvement:</span> Ongoing support and design iteration.</li>
-            </ul>`,
+               <ul class="list-disc pl-6">
+                 <li class="mb-3"><span class="font-semibold">Engaging Interfaces:</span> Designs that captivate your users.</li>
+                 <li class="mb-3"><span class="font-semibold">Enhanced User Experience:</span> Intuitive, user-focused design strategies.</li>
+                 <li class="mb-3"><span class="font-semibold">Tailored to Your Audience:</span> Customized solutions that reflect your brand.</li>
+                 <li class="mb-3"><span class="font-semibold">Continuous Improvement:</span> Ongoing support and design iteration.</li>
+               </ul>`,
     },
   },
 ];

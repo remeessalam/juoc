@@ -15,7 +15,8 @@ const ServicesWeProvide = ({ title }) => {
           <Link
             key={item.title}
             to={`/services/${item.title}`}
-            className={`group h-full group overflow-hidden space-y-6 bg-primary/80 hover:bg-primary/20 p-5 rounded-xl transition-all duration-300 `}
+            className={`group h-full group overflow-hidden space-y-6   hover:!bg-primary/20 p-5 rounded-xl transition-all duration-300 `}
+            style={{ backgroundColor: item?.color }}
           >
             {/* ${
               i === 2 ? "md:order-3 md:col-span-2 md:w-1/2 md:mx-auto" : ""

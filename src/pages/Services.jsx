@@ -3,7 +3,9 @@ import bannerImg from "../assets/images/services-banner.webp";
 import { ArrowLinkButton } from "../components/ArrowButtons";
 
 const ContactForm = lazy(() => import("../components/ContactForm"));
-const ServicesWeProvide = lazy(() => import("../components/website/ServicesWeProvide"));
+const ServicesWeProvide = lazy(() =>
+  import("../components/website/ServicesWeProvide")
+);
 
 const Services = () => {
   return (
