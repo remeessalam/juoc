@@ -260,9 +260,14 @@ const ContactUs = () => {
                     ))}
                   </select>
                   {selectedService && (
-                    <small className="text-black mt-2">
-                      {selectedService}: {serviceDescriptions[selectedService]}
-                    </small>
+                    <div className="bg-black/60 p-3 mt-2 rounded-xl">
+                      <small className="text-white mt-2 text-base">
+                        <span className="font-semibold">
+                          {selectedService}:{" "}
+                        </span>
+                        {serviceDescriptions[selectedService]}
+                      </small>
+                    </div>
                   )}
                 </div>
                 <div className="md:col-span-2">
