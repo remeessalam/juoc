@@ -21,6 +21,7 @@ import whyWorkWithUs4 from "../assets/images/whyworkwithus4.png";
 import LandingServices from "../components/landingPage/LandingServices";
 import { ArrowScrollButton } from "../components/ArrowButtons";
 import Portfolio from "../components/Portfolio";
+import ServicesWeProvide from "../components/website/ServicesWeProvide";
 
 const ContactForm = lazy(() => import("../components/ContactForm"));
 const Testimonials = lazy(() => import("../components/Testimonials"));
@@ -135,6 +136,7 @@ const LandingPage = ({ page }) => {
         <Testimonials />
       </section>
       <LandingServices isWeb={isWeb} />
+      <ServicesWeProvide title={"Other"} />
       <Portfolio page={page} />
       <section className="py-[4rem] bg-[#D8D8D8A3]">
         <div className="wrapper space-y-3">
