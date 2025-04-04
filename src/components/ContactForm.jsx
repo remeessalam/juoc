@@ -188,9 +188,12 @@ const ContactForm = ({ headline, id }) => {
               ))}
             </select>
             {selectedService && (
-              <small className="text-white mt-2">
-                {selectedService}: {serviceDescriptions[selectedService]}
-              </small>
+              <div className="bg-black/60 p-3 mt-2 rounded-xl">
+                <small className="text-white mt-2 text-base">
+                  <span className="font-semibold">{selectedService}: </span>
+                  {serviceDescriptions[selectedService]}
+                </small>
+              </div>
             )}
           </div>
 
@@ -211,7 +214,7 @@ const ContactForm = ({ headline, id }) => {
           {/* Google reCAPTCHA */}
           <div className="mt-4">
             <ReCAPTCHA
-              sitekey="6LdO6ewqAAAAAE_-F0Dkjl8No2Dn8LaqRMhLDNWV"
+              sitekey="6LfaSQorAAAAAMyv1LQg8U5fuPwc-Z7AtoObp4_l"
               onChange={onCaptchaChange}
             />
           </div>
