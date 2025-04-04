@@ -257,3 +257,28 @@ export const appPortfolio = [
     link: "https://play.google.com/store/apps/details?id=com.rentop&pcampaignid=web_share",
   },
 ];
+
+export const serviceDescriptions = {
+  "Blockchain Development":
+    "We offer blockchain development services to secure and decentralize your transactions.",
+  "Game Development":
+    "We create immersive and engaging game experiences for various platforms.",
+  "App Development":
+    "Our team develops scalable and user-friendly mobile applications.",
+  "Robotic Process Automation (RPA)":
+    "Streamline your processes with our intelligent automation solutions.",
+  "Artificial Intelligence Development":
+    "Innovative AI solutions designed to transform your business.",
+  "Machine Learning Services":
+    "Data-driven insights through advanced machine learning techniques.",
+  "Cloud Computing Services":
+    "Scalable and secure cloud services tailored to your needs.",
+  "Web Development": "Modern web development to enhance your online presence.",
+  "Data Science Services":
+    "Unlock the power of your data with our data science expertise.",
+  "Natural Language Processing (NLP)":
+    "Transforming communication with state-of-the-art NLP solutions.",
+  "Cloud Migration Services":
+    "Seamlessly migrate your systems to the cloud with our expert guidance.",
+  "UI/UX Design": "Designing intuitive and engaging user experiences.",
+};

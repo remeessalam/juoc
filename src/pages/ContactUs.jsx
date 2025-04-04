@@ -1,20 +1,28 @@
-import React, { lazy, useContext } from "react";
+import React, { lazy, useContext, useState } from "react";
 import banner from "../assets/images/contactus-banner.jpg";
 import { Mail, MapPin, PhoneCall } from "lucide-react";
-import { companyDetails } from "../data/constant";
+import { companyDetails, serviceDescriptions } from "../data/constant";
 import { Link, useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
 import { useForm } from "react-hook-form";
 import { SpinnerContext } from "../components/SpinnerContext";
+import ReCAPTCHA from "react-google-recaptcha";
+import PhoneInput from "react-phone-number-input";
+import "react-phone-number-input/style.css";
 
 const MapComponent = lazy(() => import("../components/website/MapComponent"));
 
 const ContactUs = () => {
+  const [selectedService, setSelectedService] = useState("");
+  const [captchaValue, setCaptchaValue] = useState(null);
+  const [phoneValue, setPhoneValue] = useState();
+
   const { setSpinner } = useContext(SpinnerContext);
   const navigate = useNavigate();
   const {
     register,
     handleSubmit,
+    setValue,
     reset,
     formState: { errors, isSubmitting },
   } = useForm({
@@ -30,11 +38,22 @@ const ContactUs = () => {
 
   // handle form submit click
   const handleFormSubmit = async (values) => {
+    if (!captchaValue) {
+      toast.error("Please Accept the captch");
+      return;
+    }
+    if (!phoneValue || !selectedService) {
+      toast.error(
+        "It seems you've forgotten to enter your phone number or select a service. Please provide the missing information."
+      );
+      return;
+    }
     setSpinner(true);
 
     var emailBody = "Name: " + values.name + "\n\n";
     emailBody += "Email: " + values.email + "\n\n";
-    emailBody += "Phone: " + values.phone + "\n\n";
+    emailBody += "Phone: " + phoneValue + "\n\n";
+    emailBody += "Service " + selectedService + "\n\n";
     emailBody += "Message:\n" + values.message;
 
     // Construct the request payload
@@ -65,6 +84,15 @@ const ContactUs = () => {
         toast.error(error.message);
       })
       .finally(() => setSpinner(false));
+  };
+
+  const onServiceChange = (e) => {
+    setSelectedService(e.target.value);
+  };
+
+  const onCaptchaChange = (value) => {
+    console.log(value, "thisisvalue");
+    setCaptchaValue(value);
   };
   return (
     <div className="pt-[4rem]">
@@ -164,7 +192,23 @@ const ContactUs = () => {
                     {errors.email?.message}
                   </small>
                 </div>
-                <div>
+                <div className="w-full">
+                  <PhoneInput
+                    international
+                    defaultCountry="IN"
+                    value={phoneValue}
+                    onChange={(value) => {
+                      setPhoneValue(value);
+                      setValue("phone", value);
+                    }}
+                    className="phone-input-custom2"
+                    placeholder="Enter phone number"
+                  />
+                  <small className="text-primary">
+                    {errors.phone && "Valid phone number is required"}
+                  </small>
+                </div>
+                {/* <div>
                   <input
                     type="tel"
                     className="placeholder:text-black/80 text-black p-3 bg-white outline-none w-full rounded-md"
@@ -180,7 +224,7 @@ const ContactUs = () => {
                   <small className="text-red-500">
                     {errors.phone?.message}
                   </small>
-                </div>
+                </div> */}
                 <div>
                   <input
                     type="text"
@@ -201,6 +245,26 @@ const ContactUs = () => {
                     {errors.subject?.message}
                   </small>
                 </div>
+                {/* Services Dropdown */}
+                <div className="bg-white rounded-md p-1  w-full md:col-span-2">
+                  <select
+                    className="placeholder:text-black text-black outline-none p-2 bg-transparent  w-full"
+                    {...register("service")}
+                    onChange={onServiceChange}
+                  >
+                    <option value="">Select a Service</option>
+                    {Object.keys(serviceDescriptions).map((service) => (
+                      <option key={service} value={service}>
+                        {service}
+                      </option>
+                    ))}
+                  </select>
+                  {selectedService && (
+                    <small className="text-black mt-2">
+                      {selectedService}: {serviceDescriptions[selectedService]}
+                    </small>
+                  )}
+                </div>
                 <div className="md:col-span-2">
                   <textarea
                     className="placeholder:text-black/80 text-black p-3 bg-white outline-none w-full rounded-md"
@@ -220,6 +284,13 @@ const ContactUs = () => {
                   <small className="text-red-500">
                     {errors.message?.message}
                   </small>
+                </div>
+                {/* Google reCAPTCHA */}
+                <div className="mt-4">
+                  <ReCAPTCHA
+                    sitekey="6LdO6ewqAAAAAE_-F0Dkjl8No2Dn8LaqRMhLDNWV"
+                    onChange={onCaptchaChange}
+                  />
                 </div>
               </div>
               <button

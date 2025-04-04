@@ -111,3 +111,31 @@ html {
     transform: rotate(360deg);
   }
 }
+
+.phone-input-custom input {
+  background-color: transparent;
+  border: none; /* Removes the border */
+  outline: none; /* Removes the focus outline */
+}
+.phone-input-custom {
+  border-bottom: white 1px solid;
+  padding-bottom: 0.75rem;
+}
+
+.phone-input-custom2 input {
+  background-color: transparent;
+  border: none; /* Removes the border */
+  outline: none; /* Removes the focus outline */
+  color: black;
+}
+.phone-input-custom2 {
+  color: black;
+  border-bottom: white 1px solid;
+  padding-bottom: 0.75rem;
+  background-color: white;
+  padding: 5px;
+  padding-left: 10px;
+  border-radius: 6px;
+  height: 100%;
+  max-height: 44px;
+}

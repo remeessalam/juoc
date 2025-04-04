@@ -1,18 +1,27 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import img from "../assets/images/contact-form.webp";
 import { Link, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";
 import { SpinnerContext } from "./SpinnerContext";
-import { companyDetails } from "../data/constant";
+import { companyDetails, serviceDescriptions } from "../data/constant";
+import ReCAPTCHA from "react-google-recaptcha";
+import PhoneInput from "react-phone-number-input";
+import "react-phone-number-input/style.css";
 
 const ContactForm = ({ headline, id }) => {
   const { setSpinner } = useContext(SpinnerContext);
+  const [selectedService, setSelectedService] = useState("");
+  const [captchaValue, setCaptchaValue] = useState(null);
+  const [phoneValue, setPhoneValue] = useState();
+
   const navigate = useNavigate();
   const {
     register,
     handleSubmit,
     reset,
+    setValue,
+    watch,
     formState: { errors, isSubmitting },
   } = useForm({
     mode: "all",
@@ -22,17 +31,31 @@ const ContactForm = ({ headline, id }) => {
       phone: "",
       company: "",
       message: "",
+      countryCode: "",
     },
   });
 
   // handle form submit click
   const handleFormSubmit = async (values) => {
+    if (!captchaValue) {
+      toast.error("Please Accept the captch");
+      return;
+    }
+    if (!phoneValue || !selectedService) {
+      toast.error(
+        "It seems you've forgotten to enter your phone number or select a service. Please provide the missing information."
+      );
+      return;
+    }
     setSpinner(true);
 
+    console.log(values, phoneValue, selectedService, "asdfasdfasfdsd");
+    // return;
     var emailBody = "Name: " + values.name + "\n\n";
     emailBody += "Email: " + values.email + "\n\n";
     values.company && (emailBody += "Company: " + values.company + "\n\n");
-    emailBody += "Phone: " + values.phone + "\n\n";
+    emailBody += "Phone: " + phoneValue + "\n\n";
+    emailBody += "Service " + selectedService + "\n\n";
     emailBody += "Message:\n" + values.message;
 
     // Construct the request payload
@@ -56,6 +79,7 @@ const ContactForm = ({ headline, id }) => {
         } else {
           toast.success("Email sent successfully");
           reset();
+          setPhoneValue(""); // Reset phone input
           navigate("/thank-you");
         }
       })
@@ -64,6 +88,16 @@ const ContactForm = ({ headline, id }) => {
       })
       .finally(() => setSpinner(false));
   };
+
+  const onServiceChange = (e) => {
+    setSelectedService(e.target.value);
+  };
+
+  const onCaptchaChange = (value) => {
+    console.log(value, "thisisvalue");
+    setCaptchaValue(value);
+  };
+
   return (
     <div
       id={id}
@@ -74,7 +108,7 @@ const ContactForm = ({ headline, id }) => {
         className="bg-purpleColor text-white p-8 sm:p-10 rounded-2xl"
       >
         <h3 className="section-heading">
-          {headline ? headline : "Let’s build something great together."}
+          {headline ? headline : "Let's build something great together."}
         </h3>
         <form
           onSubmit={handleSubmit(handleFormSubmit)}
@@ -89,11 +123,7 @@ const ContactForm = ({ headline, id }) => {
                 {...register("name", {
                   required: "Full name is required",
                   validate: (val) => {
-                    if (val.trim() !== "") {
-                      return true;
-                    } else {
-                      return "Full name is required";
-                    }
+                    return val.trim() !== "" || "Full name is required";
                   },
                 })}
               />
@@ -108,6 +138,7 @@ const ContactForm = ({ headline, id }) => {
               />
             </div>
           </div>
+
           <div className="">
             <input
               type="email"
@@ -123,39 +154,68 @@ const ContactForm = ({ headline, id }) => {
             />
             <small className="text-primary">{errors.email?.message}</small>
           </div>
+
+          {/* Phone number with country code - Updated with react-phone-number-input */}
           <div className="">
-            <input
-              type="tel"
-              className="placeholder:text-white outline-none p-2 bg-transparent border-b w-full"
-              placeholder="Phone Number"
-              {...register("phone", {
-                required: "Phone number is required",
-                pattern: {
-                  value: /^\+?[0-9]{10,15}$/,
-                  message: "Entered phone number is invalid",
-                },
-              })}
+            <PhoneInput
+              international
+              defaultCountry="IN"
+              value={phoneValue}
+              onChange={(value) => {
+                setPhoneValue(value);
+                setValue("phone", value);
+              }}
+              className="phone-input-custom"
+              placeholder="Enter phone number"
             />
-            <small className="text-primary">{errors.phone?.message}</small>
+            <small className="text-primary">
+              {errors.phone && "Valid phone number is required"}
+            </small>
           </div>
+
+          {/* Services Dropdown */}
+          <div className="">
+            <select
+              className="placeholder:text-white outline-none p-2 bg-transparent border-b w-full"
+              {...register("service")}
+              onChange={onServiceChange}
+            >
+              <option value="">Select a Service</option>
+              {Object.keys(serviceDescriptions).map((service) => (
+                <option key={service} value={service}>
+                  {service}
+                </option>
+              ))}
+            </select>
+            {selectedService && (
+              <small className="text-white mt-2">
+                {selectedService}: {serviceDescriptions[selectedService]}
+              </small>
+            )}
+          </div>
+
           <div className="">
             <textarea
-              type="tel"
               className="placeholder:text-white outline-none p-2 bg-transparent border-b w-full"
               placeholder="Message"
               {...register("message", {
                 required: "Message is required",
                 validate: (val) => {
-                  if (val.trim() !== "") {
-                    return true;
-                  } else {
-                    return "Message is required";
-                  }
+                  return val.trim() !== "" || "Message is required";
                 },
               })}
             />
             <small className="text-primary">{errors.message?.message}</small>
           </div>
+
+          {/* Google reCAPTCHA */}
+          <div className="mt-4">
+            <ReCAPTCHA
+              sitekey="6LdO6ewqAAAAAE_-F0Dkjl8No2Dn8LaqRMhLDNWV"
+              onChange={onCaptchaChange}
+            />
+          </div>
+
           <div className="grid lg:grid-cols-2 gap-5">
             <button
               disabled={isSubmitting}
@@ -163,13 +223,6 @@ const ContactForm = ({ headline, id }) => {
             >
               Send Message
             </button>
-            {/* <small className="">
-              By sending this form, I confirm that I have read and accepted the
-              <Link className="font-semibold" to="/">
-                {" "}
-                Privacy Policy.
-              </Link>
-            </small> */}
           </div>
         </form>
       </div>
