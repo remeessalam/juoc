@@ -214,7 +214,7 @@ const ContactForm = ({ headline, id }) => {
           {/* Google reCAPTCHA */}
           <div className="mt-4">
             <ReCAPTCHA
-              sitekey="6LfaSQorAAAAAMyv1LQg8U5fuPwc-Z7AtoObp4_l"
+              sitekey="6Lfo9gorAAAAACKIHEp0rGMxKQR8EOvcEBzRUXSm"
               onChange={onCaptchaChange}
             />
           </div>
