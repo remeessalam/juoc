@@ -19,7 +19,7 @@ const Blogs = () => {
               data-aos="fade-up"
               className="group space-y-2 p-5 rounded-xl border border-black/20"
             >
-              <Link to={`/blogs/${i + 1}`}>
+              <Link to={item.link}>
                 <img
                   src={item.img}
                   alt=""
