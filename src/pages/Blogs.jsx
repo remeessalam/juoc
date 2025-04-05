@@ -23,7 +23,7 @@ const Blogs = () => {
                 <img
                   src={item.img}
                   alt=""
-                  className="group-hover:brightness-90 max-h-[25rem] object-cover w-full rounded-xl transition-all duration-300"
+                  className="group-hover:brightness-90 h-[25rem] max-h-[25rem] object-cover w-full rounded-xl transition-all duration-300"
                 />
               </Link>
               <Link
