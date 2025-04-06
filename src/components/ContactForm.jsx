@@ -182,7 +182,7 @@ const ContactForm = ({ headline, id }) => {
             >
               <option value="">Select a Service</option>
               {Object.keys(serviceDescriptions).map((service) => (
-                <option key={service} value={service}>
+                <option key={service} value={service} className="!text-black">
                   {service}
                 </option>
               ))}
