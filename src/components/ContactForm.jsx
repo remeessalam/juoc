@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useRef, useState } from "react";
 import img from "../assets/images/contact-form.webp";
 import { Link, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
@@ -8,12 +8,14 @@ import { companyDetails, serviceDescriptions } from "../data/constant";
 import ReCAPTCHA from "react-google-recaptcha";
 import PhoneInput from "react-phone-number-input";
 import "react-phone-number-input/style.css";
+import { validateToken } from "../util/helper";
 
 const ContactForm = ({ headline, id }) => {
   const { setSpinner } = useContext(SpinnerContext);
   const [selectedService, setSelectedService] = useState("");
   const [captchaValue, setCaptchaValue] = useState(null);
   const [phoneValue, setPhoneValue] = useState();
+  const recaptchaRef = useRef(null);
 
   const navigate = useNavigate();
   const {
@@ -38,7 +40,7 @@ const ContactForm = ({ headline, id }) => {
   // handle form submit click
   const handleFormSubmit = async (values) => {
     if (!captchaValue) {
-      toast.error("Please Accept the captch");
+      toast.error("Please complete the reCAPTCHA verification");
       return;
     }
     if (!phoneValue || !selectedService) {
@@ -48,7 +50,21 @@ const ContactForm = ({ headline, id }) => {
       return;
     }
     setSpinner(true);
-
+    const token = recaptchaRef.current.getValue();
+    try {
+      const res = await validateToken(token);
+      const result = await res.json();
+      if (result.data.success) {
+        setCaptchaValue(true);
+        toast.success("Verification successful!");
+      } else {
+        toast.error("Verification failed. Please try again.");
+        return;
+      }
+    } catch (error) {
+      toast.error("Verification failed. Please try again.");
+      return;
+    }
     console.log(values, phoneValue, selectedService, "asdfasdfasfdsd");
     // return;
     var emailBody = "Name: " + values.name + "\n\n";
@@ -214,7 +230,8 @@ const ContactForm = ({ headline, id }) => {
           {/* Google reCAPTCHA */}
           <div className="mt-4">
             <ReCAPTCHA
-              sitekey="6Lfo9gorAAAAACKIHEp0rGMxKQR8EOvcEBzRUXSm"
+              ref={recaptchaRef}
+              sitekey="6Le7rwsrAAAAAGlbC7u0RziGOymN53Z1AsEjbeCw"
               onChange={onCaptchaChange}
             />
           </div>
