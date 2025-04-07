@@ -59,9 +59,11 @@ const ContactForm = ({ headline, id }) => {
         toast.success("Verification successful!");
       } else {
         toast.error("Verification failed. Please try again.");
+        setSpinner(false);
         return;
       }
     } catch (error) {
+      setSpinner(false);
       toast.error("Verification failed. Please try again.");
       return;
     }

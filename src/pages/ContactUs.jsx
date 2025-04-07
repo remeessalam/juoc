@@ -1,4 +1,4 @@
-import React, { lazy, useContext, useState } from "react";
+import React, { lazy, useContext, useRef, useState } from "react";
 import banner from "../assets/images/contactus-banner.jpg";
 import { Mail, MapPin, PhoneCall } from "lucide-react";
 import { companyDetails, serviceDescriptions } from "../data/constant";
@@ -9,6 +9,7 @@ import { SpinnerContext } from "../components/SpinnerContext";
 import ReCAPTCHA from "react-google-recaptcha";
 import PhoneInput from "react-phone-number-input";
 import "react-phone-number-input/style.css";
+import { validateToken } from "../util/helper";
 
 const MapComponent = lazy(() => import("../components/website/MapComponent"));
 
@@ -16,6 +17,7 @@ const ContactUs = () => {
   const [selectedService, setSelectedService] = useState("");
   const [captchaValue, setCaptchaValue] = useState(null);
   const [phoneValue, setPhoneValue] = useState();
+  const recaptchaRef = useRef(null);
 
   const { setSpinner } = useContext(SpinnerContext);
   const navigate = useNavigate();
@@ -49,6 +51,23 @@ const ContactUs = () => {
       return;
     }
     setSpinner(true);
+    const token = recaptchaRef.current.getValue();
+    try {
+      const res = await validateToken(token);
+      const result = await res.json();
+      if (result.data.success) {
+        setCaptchaValue(true);
+        toast.success("Verification successful!");
+      } else {
+        toast.error("Verification failed. Please try again.");
+        setSpinner(false);
+        return;
+      }
+    } catch (error) {
+      toast.error("Verification failed. Please try again.");
+      setSpinner(false);
+      return;
+    }
 
     var emailBody = "Name: " + values.name + "\n\n";
     emailBody += "Email: " + values.email + "\n\n";
@@ -297,7 +316,8 @@ const ContactUs = () => {
                 {/* Google reCAPTCHA */}
                 <div className="mt-4">
                   <ReCAPTCHA
-                    sitekey="6LdO6ewqAAAAAE_-F0Dkjl8No2Dn8LaqRMhLDNWV"
+                    ref={recaptchaRef}
+                    sitekey="6Le7rwsrAAAAAGlbC7u0RziGOymN53Z1AsEjbeCw"
                     onChange={onCaptchaChange}
                   />
                 </div>
