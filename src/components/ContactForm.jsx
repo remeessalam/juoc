@@ -231,7 +231,7 @@ const ContactForm = ({ headline, id }) => {
           <div className="mt-4">
             <ReCAPTCHA
               ref={recaptchaRef}
-              sitekey="6Le7rwsrAAAAAGlbC7u0RziGOymN53Z1AsEjbeCw"
+              sitekey="6Le7rwsrAAAAANvwFZ9kIY0Fs1bB69iGg_ahBuX9"
               onChange={onCaptchaChange}
             />
           </div>
