@@ -7,8 +7,8 @@ import toast from "react-hot-toast";
 import { useForm } from "react-hook-form";
 import { SpinnerContext } from "../components/SpinnerContext";
 import ReCAPTCHA from "react-google-recaptcha";
-import PhoneInput from "react-phone-number-input";
-import "react-phone-number-input/style.css";
+import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/style.css";
 import { validateToken } from "../util/helper";
 
 const MapComponent = lazy(() => import("../components/website/MapComponent"));
@@ -48,6 +48,9 @@ const ContactUs = () => {
       toast.error(
         "It seems you've forgotten to enter your phone number or select a service. Please provide the missing information."
       );
+      return;
+    }
+    if (!validatePhoneNumber(phoneValue)) {
       return;
     }
     setSpinner(true);
@@ -112,6 +115,22 @@ const ContactUs = () => {
   const onCaptchaChange = (value) => {
     console.log(value, "thisisvalue");
     setCaptchaValue(value);
+  };
+
+  const validatePhoneNumber = (phone) => {
+    const digitsOnly = phone.replace(/\D/g, "");
+    console.log(phone, "asdfasdfsdfsdf");
+    if (digitsOnly.length < 10) {
+      toast.error("Phone number must contain at least 10 digits.");
+      return false;
+    }
+
+    // if (!phone.startsWith("+")) {
+    //   toast.error("Please include the country code (e.g., +91).");
+    //   return false;
+    // }
+
+    return true;
   };
   return (
     <div className="pt-[4rem]">
@@ -212,10 +231,21 @@ const ContactUs = () => {
                   </small>
                 </div>
                 <div className="w-full">
-                  <PhoneInput
+                  {/* <PhoneInput
                     international
                     defaultCountry="IN"
                     value={phoneValue}
+                    onChange={(value) => {
+                      setPhoneValue(value);
+                      setValue("phone", value);
+                    }}
+                    className="phone-input-custom2"
+                    placeholder="Enter phone number"
+                  /> */}
+                  <PhoneInput
+                    country={"in"}
+                    value={phoneValue}
+                    enableSearch={true}
                     onChange={(value) => {
                       setPhoneValue(value);
                       setValue("phone", value);
@@ -298,16 +328,7 @@ const ContactUs = () => {
                     className="placeholder:text-black/80 text-black p-3 bg-white outline-none w-full rounded-md"
                     placeholder="Message"
                     rows="5"
-                    {...register("message", {
-                      required: "Message is required",
-                      validate: (val) => {
-                        if (val.trim() !== "") {
-                          return true;
-                        } else {
-                          return "Message is required";
-                        }
-                      },
-                    })}
+                    {...register("message")}
                   />
                   <small className="text-red-500">
                     {errors.message?.message}

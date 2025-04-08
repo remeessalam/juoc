@@ -6,9 +6,10 @@ import toast from "react-hot-toast";
 import { SpinnerContext } from "./SpinnerContext";
 import { companyDetails, serviceDescriptions } from "../data/constant";
 import ReCAPTCHA from "react-google-recaptcha";
-import PhoneInput from "react-phone-number-input";
-import "react-phone-number-input/style.css";
+
 import { validateToken } from "../util/helper";
+import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/style.css";
 
 const ContactForm = ({ headline, id }) => {
   const { setSpinner } = useContext(SpinnerContext);
@@ -36,7 +37,7 @@ const ContactForm = ({ headline, id }) => {
       countryCode: "",
     },
   });
-
+  console.log(phoneValue, "asdfasdfasdfsd");
   // handle form submit click
   const handleFormSubmit = async (values) => {
     if (!captchaValue) {
@@ -49,6 +50,10 @@ const ContactForm = ({ headline, id }) => {
       );
       return;
     }
+    if (!validatePhoneNumber(phoneValue)) {
+      return;
+    }
+
     setSpinner(true);
     const token = recaptchaRef.current.getValue();
     try {
@@ -97,7 +102,7 @@ const ContactForm = ({ headline, id }) => {
         } else {
           toast.success("Email sent successfully");
           reset();
-          setPhoneValue(""); // Reset phone input
+          setPhoneValue("");
           navigate("/thank-you");
         }
       })
@@ -114,6 +119,22 @@ const ContactForm = ({ headline, id }) => {
   const onCaptchaChange = (value) => {
     console.log(value, "thisisvalue");
     setCaptchaValue(value);
+  };
+
+  const validatePhoneNumber = (phone) => {
+    const digitsOnly = phone.replace(/\D/g, "");
+    console.log(phone, "asdfasdfsdfsdf");
+    if (digitsOnly.length < 10) {
+      toast.error("Phone number must contain at least 10 digits.");
+      return false;
+    }
+
+    // if (!phone.startsWith("+")) {
+    //   toast.error("Please include the country code (e.g., +91).");
+    //   return false;
+    // }
+
+    return true;
   };
 
   return (
@@ -175,7 +196,7 @@ const ContactForm = ({ headline, id }) => {
 
           {/* Phone number with country code - Updated with react-phone-number-input */}
           <div className="">
-            <PhoneInput
+            {/* <PhoneInput
               international
               defaultCountry="IN"
               value={phoneValue}
@@ -185,7 +206,19 @@ const ContactForm = ({ headline, id }) => {
               }}
               className="phone-input-custom"
               placeholder="Enter phone number"
+            /> */}
+            <PhoneInput
+              country={"in"}
+              value={phoneValue}
+              enableSearch={true}
+              onChange={(value) => {
+                setPhoneValue(value);
+                setValue("phone", value);
+              }}
+              className="phone-input-custom"
+              placeholder="Enter phone number"
             />
+
             <small className="text-primary">
               {errors.phone && "Valid phone number is required"}
             </small>
@@ -219,12 +252,7 @@ const ContactForm = ({ headline, id }) => {
             <textarea
               className="placeholder:text-white outline-none p-2 bg-transparent border-b w-full"
               placeholder="Message"
-              {...register("message", {
-                required: "Message is required",
-                validate: (val) => {
-                  return val.trim() !== "" || "Message is required";
-                },
-              })}
+              {...register("message")}
             />
             <small className="text-primary">{errors.message?.message}</small>
           </div>
