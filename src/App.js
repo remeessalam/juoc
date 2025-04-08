@@ -17,6 +17,7 @@ import LandingHeader from "./components/landingPage/LandingHeader";
 import LandingFooter from "./components/landingPage/LandingFooter";
 import { Toaster } from "react-hot-toast";
 import CallIcon from "./components/CallIcon";
+import WhatsAppIconPopUp from "./components/WhatsAppIconPopUp";
 
 // Lazy loading components
 const Home = lazy(() => import("./pages/Home"));
@@ -43,6 +44,7 @@ function App() {
       <Suspense fallback={<LoadingSpinner />}>
         <SpinnerContextProvider>
           <LoadingSpinnerContext />
+          <WhatsAppIconPopUp />
           <CallIcon />
           <ScrollToTop />
           <Toaster position="top-center" />

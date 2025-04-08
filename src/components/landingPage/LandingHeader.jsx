@@ -79,12 +79,12 @@ const LandingHeader = () => {
               </Link>
             )
           )}
-          <Link
+          {/* <Link
             to={`https://api.whatsapp.com/send/?phone=918590971792&text&type=phone_number&app_absent=0`}
             className="primary-btn"
           >
             Let's Chat <i class="fa fa-whatsapp text-xl"></i>
-          </Link>
+          </Link> */}
         </div>
         <div
           className="block lg:hidden justify-self-end"
@@ -143,12 +143,12 @@ const LandingHeader = () => {
               </Link>
             )
           )}
-          <Link
+          {/* <Link
             to={`https://api.whatsapp.com/send/?phone=918590971792&text&type=phone_number&app_absent=0`}
             className="primary-btn"
           >
             Let's Chat <i class="fa fa-whatsapp text-xl"></i>
-          </Link>
+          </Link> */}
         </div>
       </Drawer>
     </div>

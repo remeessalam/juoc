@@ -30,7 +30,9 @@ export const companyDetails = {
   address:
     "UNIT 101 , OXFORD TOWERS , 139 HAL OLD AIRPORT RD, KODIHALLI BANGALORE, KARNATAKA INDIA , 560008",
   phone: "+91-8590971792",
-  email: "abc@example.com",
+  email: "juocsolutions@gmail.com",
+  whatsapp:
+    "https://api.whatsapp.com/send/?phone=918590971792&text=Feel%20free%20to%20contact%20us%20for%20any%20enquiry&type=phone_number&app_absent=0",
 };
 
 // working process

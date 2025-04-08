@@ -5,6 +5,7 @@ import blog2 from "../../assets/images/blogs/2.png";
 import blog3 from "../../assets/images/blogs/3.png";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import { blogs } from "../../data/blogs";
 
 const BlogsSection = () => {
   const [loaded, setLoaded] = useState(false);
@@ -71,21 +72,20 @@ const BlogsSection = () => {
         Browse our latest blog articles
       </h2>
       <div data-aos="fade-up" ref={sliderRef} className="keen-slider mt-7">
-        {[blog1, blog2, blog3].map((item, i) => (
+        {blogs.map((item, i) => (
           <Link
-            to="/blogs/1"
             key={item}
-            className="keen-slider__slide space-y-2 p-5 rounded-xl border border-black/20"
+            to={item.link}
+            className="keen-slider__slide space-y-2 p-5 rounded-xl border
+            border-black/20"
           >
-            <img src={item} alt="" className="w-full rounded-xl" />
-            <h6 className="text-lg font-semibold line-clamp-2">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            </h6>
-            <p className="line-clamp-3">
-              Boluptatum dolores porro ex laborum officiis magnam deleniti ea
-              velit dolore inventore consequuntur voluptas sit doloribus vero?
-              Eos dolorum deleniti provident!
-            </p>
+            <img
+              src={item.img}
+              alt=""
+              className="w-full rounded-xl max-h-[20rem] h-[20rem]"
+            />
+            <h6 className="text-lg font-semibold line-clamp-2">{item.title}</h6>
+            <p className="line-clamp-3">{item.desc}</p>
           </Link>
         ))}
       </div>
