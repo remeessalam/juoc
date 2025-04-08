@@ -12,7 +12,7 @@ const Blogs = () => {
         <h1 data-aos="fade-up" className="section-heading text-center">
           Blogs
         </h1>
-        <div className="max-w-5xl mx-auto mt-7 grid sm:grid-cols-2 gap-5">
+        <div className="max-w-5xl mx-auto mt-7 grid sm:grid-cols-2 md:grid-cols-3 gap-5">
           {blogs.map((item, i) => (
             <div
               key={item}
@@ -23,7 +23,7 @@ const Blogs = () => {
                 <img
                   src={item.img}
                   alt=""
-                  className="group-hover:brightness-90 h-[25rem] max-h-[25rem] object-cover w-full rounded-xl transition-all duration-300"
+                  className="group-hover:brightness-90 h-[15rem] max-h-[15rem] object-cover w-full rounded-xl transition-all duration-300"
                 />
               </Link>
               <Link
