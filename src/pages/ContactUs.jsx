@@ -118,20 +118,18 @@ const ContactUs = () => {
   };
 
   const validatePhoneNumber = (phone) => {
-    const digitsOnly = phone.replace(/\D/g, "");
-    console.log(phone, "asdfasdfsdfsdf");
-    if (digitsOnly.length < 10) {
-      toast.error("Phone number must contain at least 10 digits.");
+    const phoneRegex = /^\+\d{11,15}$/;
+
+    if (!phoneRegex.test(phone)) {
+      toast.error(
+        "Enter a valid phone number with country code (e.g., +91xxxxxxxxxx, minimum 11 digits)."
+      );
       return false;
     }
 
-    // if (!phone.startsWith("+")) {
-    //   toast.error("Please include the country code (e.g., +91).");
-    //   return false;
-    // }
-
     return true;
   };
+
   return (
     <div className="pt-[4rem]">
       <img
