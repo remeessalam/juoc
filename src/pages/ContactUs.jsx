@@ -118,11 +118,15 @@ const ContactUs = () => {
   };
 
   const validatePhoneNumber = (phone) => {
-    const phoneRegex = /^\+\d{11,15}$/;
+    const digitsOnly = phone.replace(/\D/g, "");
 
-    if (!phoneRegex.test(phone)) {
+    const formattedPhone = `+${digitsOnly}`;
+
+    const phoneRegex = /^\+\d{10,17}$/;
+
+    if (!phoneRegex.test(formattedPhone)) {
       toast.error(
-        "Enter a valid phone number with country code (e.g., +91xxxxxxxxxx, minimum 11 digits)."
+        "Enter a valid phone number with country code (e.g., +91xxxxxxxxxx, 10–15 digits)."
       );
       return false;
     }

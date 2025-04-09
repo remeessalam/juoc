@@ -40,10 +40,10 @@ const ContactForm = ({ headline, id }) => {
   console.log(phoneValue, "asdfasdfasdfsd");
   // handle form submit click
   const handleFormSubmit = async (values) => {
-    if (!captchaValue) {
-      toast.error("Please complete the reCAPTCHA verification");
-      return;
-    }
+    // if (!captchaValue) {
+    //   toast.error("Please complete the reCAPTCHA verification");
+    //   return;
+    // }
     if (!phoneValue || !selectedService) {
       toast.error(
         "It seems you've forgotten to enter your phone number or select a service. Please provide the missing information."
@@ -121,11 +121,15 @@ const ContactForm = ({ headline, id }) => {
     setCaptchaValue(value);
   };
   const validatePhoneNumber = (phone) => {
-    const phoneRegex = /^\+\d{11,15}$/;
+    const digitsOnly = phone.replace(/\D/g, "");
 
-    if (!phoneRegex.test(phone)) {
+    const formattedPhone = `+${digitsOnly}`;
+    console.log(formattedPhone, "asdfasdfsdfsd");
+    const phoneRegex = /^\+\d{10,17}$/;
+
+    if (!phoneRegex.test(formattedPhone)) {
       toast.error(
-        "Enter a valid phone number with country code (e.g., +91xxxxxxxxxx, minimum 11 digits)."
+        "Enter a valid phone number with country code (e.g., +91xxxxxxxxxx, 10–15 digits)."
       );
       return false;
     }
