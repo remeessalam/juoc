@@ -84,7 +84,7 @@ const ContactForm = ({ headline, id }) => {
     // Construct the request payload
     var payload = {
       to: companyDetails.email,
-      subject: "Contact Form Submission - JUOC Solutions LLP",
+      subject: "Contact Form Submission - JUOC Solutions",
       body: emailBody,
     };
 

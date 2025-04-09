@@ -81,7 +81,7 @@ const ContactUs = () => {
     // Construct the request payload
     var payload = {
       to: companyDetails.email,
-      subject: values.subject,
+      subject: values.subject || "Contact Form Submission - JUOC Solutions",
       body: emailBody,
     };
 
@@ -281,16 +281,7 @@ const ContactUs = () => {
                     type="text"
                     className="placeholder:text-black/80 text-black p-3 bg-white outline-none w-full rounded-md"
                     placeholder="Subject"
-                    {...register("subject", {
-                      required: "Subject is required",
-                      validate: (val) => {
-                        if (val.trim() !== "") {
-                          return true;
-                        } else {
-                          return "Subject is required";
-                        }
-                      },
-                    })}
+                    {...register("subject")}
                   />
                   <small className="text-red-500">
                     {errors.subject?.message}
