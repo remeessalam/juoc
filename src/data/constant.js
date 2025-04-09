@@ -32,7 +32,7 @@ export const companyDetails = {
   phone: "+91-8590971792",
   email: "juocsolutions@gmail.com",
   whatsapp:
-    "https://api.whatsapp.com/send/?phone=918590971792&text=Feel%20free%20to%20contact%20us%20for%20any%20enquiry&type=phone_number&app_absent=0",
+    "https://api.whatsapp.com/send/?phone=918590971792&text=Hello%2C%20I%20want%20to%20inquire%20about%20the%20project.&type=phone_number&app_absent=0",
 };
 
 // working process
