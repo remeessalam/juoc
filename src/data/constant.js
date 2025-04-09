@@ -33,6 +33,10 @@ export const companyDetails = {
   email: "juocsolutions@gmail.com",
   whatsapp:
     "https://api.whatsapp.com/send/?phone=918590971792&text=Hello%2C%20I%20want%20to%20inquire%20about%20the%20project.&type=phone_number&app_absent=0",
+  instagram:
+    "https://www.instagram.com/juoc_solutions_?igsh=MWg5dXhqdG1qaG02Zg==",
+  linkedin:
+    "https://www.linkedin.com/in/asif-rs-745121239?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
 };
 
 // working process
