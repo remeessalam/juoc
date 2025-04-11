@@ -30,7 +30,7 @@ export const companyDetails = {
   address:
     "UNIT 101 , OXFORD TOWERS , 139 HAL OLD AIRPORT RD, KODIHALLI BANGALORE, KARNATAKA INDIA , 560008",
   phone: "+91-8590971792",
-  email: "juocsolutions@gmail.com",
+  email: "support@juocsolutions.com",
   whatsapp:
     "https://api.whatsapp.com/send/?phone=918590971792&text=Hello%2C%20I%20want%20to%20inquire%20about%20the%20project.&type=phone_number&app_absent=0",
   instagram:
