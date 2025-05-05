@@ -11,13 +11,18 @@ import SpinnerContextProvider, {
 } from "./components/SpinnerContext";
 import { lazy, Suspense } from "react";
 import { LoadingSpinner } from "./components/LoadingSpinner";
-import Header from "./components/website/Header";
-import Footer from "./components/website/Footer";
-import LandingHeader from "./components/landingPage/LandingHeader";
-import LandingFooter from "./components/landingPage/LandingFooter";
 import { Toaster } from "react-hot-toast";
-import CallIcon from "./components/CallIcon";
-import WhatsAppIconPopUp from "./components/WhatsAppIconPopUp";
+const Header = lazy(() => import("./components/website/Header"));
+const Footer = lazy(() => import("./components/website/Footer"));
+const LandingHeader = lazy(() =>
+  import("./components/landingPage/LandingHeader")
+);
+const LandingFooter = lazy(() =>
+  import("./components/landingPage/LandingFooter")
+);
+
+const CallIcon = lazy(() => import("./components/CallIcon"));
+const WhatsAppIconPopUp = lazy(() => import("./components/WhatsAppIconPopUp"));
 
 // Lazy loading components
 const Home = lazy(() => import("./pages/Home"));
