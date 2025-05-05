@@ -17,7 +17,7 @@ import {
 import { ReactComponent as icon1 } from "../assets/svg/services/Web Development.svg";
 import { ReactComponent as icon2 } from "../assets/svg/services/App Development.svg";
 import { Link } from "react-router-dom";
-import howWeBuildCover from "../assets/images/how-we-build.jpeg";
+import howWeBuildCover from "../assets/images/how-we-build.webp";
 import whyWorkWithUs1 from "../assets/images/whyworkwithus1.webp";
 import whyWorkWithUs2 from "../assets/images/whyworkwithus2.webp";
 import whyWorkWithUs3 from "../assets/images/whyworkwithus3.webp";

@@ -13,19 +13,23 @@ import {
   Store,
   Tv,
 } from "lucide-react";
-import howWeBuildCover from "../assets/images/how-we-build.jpeg";
+import howWeBuildCover from "../assets/images/how-we-build.webp";
 import whyWorkWithUs1 from "../assets/images/whyworkwithus1.webp";
 import whyWorkWithUs2 from "../assets/images/whyworkwithus2.webp";
 import whyWorkWithUs3 from "../assets/images/whyworkwithus3.webp";
 import whyWorkWithUs4 from "../assets/images/whyworkwithus4.webp";
 import LandingServices from "../components/landingPage/LandingServices";
 import { ArrowScrollButton } from "../components/ArrowButtons";
-import Portfolio from "../components/Portfolio";
-import ServicesWeProvide from "../components/website/ServicesWeProvide";
-import JoinHappyCustomers from "../components/JoinHappyCustomers";
 
 const ContactForm = lazy(() => import("../components/ContactForm"));
 const Testimonials = lazy(() => import("../components/Testimonials"));
+const Portfolio = lazy(() => import("../components/Portfolio"));
+const ServicesWeProvide = lazy(() =>
+  import("../components/website/ServicesWeProvide")
+);
+const JoinHappyCustomers = lazy(() =>
+  import("../components/JoinHappyCustomers")
+);
 
 const industries = [
   {
