@@ -5,19 +5,9 @@ import Drawer from "react-modern-drawer";
 import { Divide as Hamburger } from "hamburger-react";
 import "react-modern-drawer/dist/index.css";
 import { X } from "lucide-react";
-import { companyDetails, logo } from "../../data/constant";
+import { logo } from "../../data/constant";
 
 const links = [
-  // {
-  //   name: "Home",
-  //   path: "/",
-  //   scroll: false,
-  // },
-  // {
-  //   name: "About Us",
-  //   path: "about",
-  //   scroll: true,
-  // },
   {
     name: "Services",
     path: "services",
