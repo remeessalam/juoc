@@ -1,7 +1,4 @@
 import React from "react";
-import blog1 from "../assets/images/blogs/1.png";
-import blog2 from "../assets/images/blogs/2.png";
-import blog3 from "../assets/images/blogs/3.png";
 import { Link } from "react-router-dom";
 import { blogs } from "../data/blogs";
 
