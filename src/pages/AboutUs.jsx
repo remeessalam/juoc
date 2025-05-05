@@ -6,6 +6,7 @@ import img1 from "../assets/images/aboutus-1.png";
 import img2 from "../assets/images/aboutus-2.png";
 import { Link } from "react-router-dom";
 import { ArrowLinkButton } from "../components/ArrowButtons";
+import JoinHappyCustomers from "../components/JoinHappyCustomers";
 
 const ContactForm = lazy(() => import("../components/ContactForm"));
 const WorkProcess = lazy(() => import("../components/WorkProcess"));
@@ -48,6 +49,7 @@ const AboutUs = () => {
       <section className="bg-[#F7F7F9]">
         <Testimonials />
       </section>
+      <JoinHappyCustomers />
       <section
         className="py-[7rem]"
         style={{ backgroundImage: `url(${ourValuesBg})` }}

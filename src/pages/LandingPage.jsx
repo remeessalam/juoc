@@ -22,6 +22,7 @@ import LandingServices from "../components/landingPage/LandingServices";
 import { ArrowScrollButton } from "../components/ArrowButtons";
 import Portfolio from "../components/Portfolio";
 import ServicesWeProvide from "../components/website/ServicesWeProvide";
+import JoinHappyCustomers from "../components/JoinHappyCustomers";
 
 const ContactForm = lazy(() => import("../components/ContactForm"));
 const Testimonials = lazy(() => import("../components/Testimonials"));
@@ -76,11 +77,17 @@ const LandingPage = ({ page }) => {
               <span>{isWeb ? "Web Development" : "App Development"}</span>
             </div>
             <h1 data-aos="fade-up" className="heading text-white">
-              Empowering Your Business with Seamless
-              <span className="gradient-text">
-                {" "}
-                {isWeb ? "Web Solutions" : "App Solutions"}
-              </span>
+              {isWeb ? (
+                <>
+                  Empowering Your Business with Seamless
+                  <span className="gradient-text">
+                    {" "}
+                    {isWeb ? "Web Solutions" : "App Solutions"}
+                  </span>
+                </>
+              ) : (
+                <>Custom App, Web & Software Solutions for Every Industry</>
+              )}
               <br />
             </h1>
             <p data-aos="fade-up" className="text-white text-lg">
@@ -90,10 +97,9 @@ const LandingPage = ({ page }) => {
               experiences across devices. Our solutions are tailored to meet
               your unique needs and drive measurable results.
               `
-                : `Our expert team creates innovative, user-friendly mobile
-            applications that bring your ideas to life. Whether it’s Android,
-            iOS, or cross-platform development, we ensure your app stands out in
-            the competitive digital landscape.`}
+                : `From mobile apps to AI-powered platforms — we build secure, scalable solutions for
+healthcare, retail, real estate, logistics, and more. Talk to our experts and get tailor-made digital
+products built to perform.`}
             </p>
           </div>
         </div>
@@ -135,6 +141,7 @@ const LandingPage = ({ page }) => {
       <section className="bg-[#F7F7F9]">
         <Testimonials />
       </section>
+      <JoinHappyCustomers />
       <ServicesWeProvide title={"Other"} />
       <LandingServices isWeb={isWeb} />
       <Portfolio page={page} />

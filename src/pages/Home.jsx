@@ -23,6 +23,7 @@ import whyWorkWithUs2 from "../assets/images/whyworkwithus2.png";
 import whyWorkWithUs3 from "../assets/images/whyworkwithus3.png";
 import whyWorkWithUs4 from "../assets/images/whyworkwithus4.png";
 import { ArrowLinkButton } from "../components/ArrowButtons";
+import JoinHappyCustomers from "../components/JoinHappyCustomers";
 
 const ContactForm = lazy(() => import("../components/ContactForm"));
 const BlogsSection = lazy(() => import("../components/website/BlogsSection"));
@@ -171,6 +172,7 @@ const Home = () => {
       <section className="bg-[#F7F7F9]">
         <Testimonials />
       </section>
+      <JoinHappyCustomers />
       <ServicesWeProvide />
       <section className="py-[4rem] bg-[#D8D8D8A3]">
         <div className="wrapper space-y-3">
