@@ -5,7 +5,7 @@ import { companyDetails } from "../data/constant";
 const WhatsAppIconPopUp = () => {
   return (
     <Link
-      className="fixed group bottom-[7.5rem] p-1 hover:-translate-y-1 z-30 border bg-green-500 border-white-500  rounded-full right-[1.5rem] transition-all duration-200"
+      className="fixed group bottom-[13.5rem] p-1 hover:-translate-y-1 z-30 border bg-green-500 border-white-500  rounded-full right-[1.5rem] transition-all duration-200"
       to={companyDetails.whatsapp}
       target="_blank"
       rel="noopener noreferrer"

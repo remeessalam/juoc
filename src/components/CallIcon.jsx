@@ -8,7 +8,7 @@ import { CiPhone } from "react-icons/ci";
 const CallIcon = () => {
   return (
     <Link
-      className="fixed group bottom-[2.5rem] p-1 hover:-translate-y-1 z-30 border bg-black border-white-500  rounded-full right-[1.5rem] transition-all duration-200"
+      className="fixed group bottom-[9rem] p-1 hover:-translate-y-1 z-30 border bg-black border-white-500  rounded-full right-[1.5rem] transition-all duration-200"
       to={`tel:${companyDetails.phone}`}
       target="_blank"
       rel="noopener noreferrer"

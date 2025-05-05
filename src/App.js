@@ -10,6 +10,7 @@ import SpinnerContextProvider, {
   LoadingSpinnerContext,
 } from "./components/SpinnerContext";
 import { lazy, Suspense } from "react";
+// import TawkMessengerReact from "@tawk.to/tawk-messenger-react";
 import { LoadingSpinner } from "./components/LoadingSpinner";
 import { Toaster } from "react-hot-toast";
 const Header = lazy(() => import("./components/website/Header"));
@@ -53,6 +54,10 @@ function App() {
           <CallIcon />
           <ScrollToTop />
           <Toaster position="top-center" />
+          {/* <TawkMessengerReact
+            propertyId="681892ceaffc0219158af466"
+            widgetId="1iqg7pk70"
+          /> */}
           <Routes>
             <Route path="*" element={<Navigate to="/" />} />
             <Route
@@ -148,7 +153,7 @@ function App() {
                 </>
               }
             />
-          </Routes>
+          </Routes>{" "}
         </SpinnerContextProvider>
       </Suspense>
     </Router>
