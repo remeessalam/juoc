@@ -78,6 +78,7 @@ const BlogsSection = () => {
           >
             <img
               src={item.img}
+              loading="lazy"
               alt={`blog-${i}`}
               className="w-full rounded-xl max-h-[20rem] h-[20rem]"
             />
