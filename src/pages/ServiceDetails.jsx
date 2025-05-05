@@ -25,6 +25,7 @@ const ServiceDetails = () => {
             <div className="w-full sm:w-1/2 md:w-full">
               <img
                 src={data.detailsPageImages.second}
+                loading="lazy"
                 classNames="object-contain"
                 alt={data.title}
               />
@@ -40,6 +41,7 @@ const ServiceDetails = () => {
             <div className="w-full sm:w-1/2 md:w-full">
               <img
                 src={data.detailsPageImages.third}
+                loading="lazy"
                 classNames="object-contain"
                 alt={data.title}
               />

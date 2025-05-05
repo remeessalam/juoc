@@ -307,6 +307,7 @@ const Home = () => {
             </div>
             <img
               src={whyWorkWithUs1}
+              loading="lazy"
               alt="why work with us-image"
               className="md:absolute right-0 top-1/2 md:-translate-y-1/2 max-h-[16rem] md:max-h-[25rem] object-contain"
             />
@@ -335,6 +336,7 @@ const Home = () => {
             <img
               src={whyWorkWithUs2}
               alt="why work with us-image-2"
+              loading="lazy"
               className="md:absolute right-0 bottom-0 max-h-[16rem] md:max-h-[24rem] object-contain"
             />
           </div>
@@ -361,6 +363,7 @@ const Home = () => {
             <img
               src={whyWorkWithUs3}
               alt="why work with us-image-3"
+              loading="lazy"
               className="md:absolute right-0 bottom-0 max-h-[16rem] md:max-h-[22rem] object-contain"
             />
           </div>

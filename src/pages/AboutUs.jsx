@@ -104,6 +104,7 @@ const AboutUs = () => {
           <div className="overflow-hidden relative">
             <img
               src={img1}
+              loading="lazy"
               className="h-full w-full object-cover"
               alt="About Us"
             />
@@ -123,6 +124,7 @@ const AboutUs = () => {
             <div className="grid sm:grid-cols-2 h-fit relative">
               <img
                 src={img2}
+                loading="lazy"
                 className="hidden sm:block h-full w-full object-cover"
                 alt="About Us"
               />

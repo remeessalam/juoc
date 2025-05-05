@@ -278,6 +278,7 @@ products built to perform.`}
             <img
               src={whyWorkWithUs1}
               alt="landing-why work with us-image"
+              loading="lazy"
               className="md:absolute right-0 top-1/2 md:-translate-y-1/2 max-h-[16rem] md:max-h-[25rem] object-contain"
             />
           </div>
@@ -303,6 +304,7 @@ products built to perform.`}
             <img
               src={whyWorkWithUs2}
               alt="landing-why work with us-image-1"
+              loading="lazy"
               className="md:absolute right-0 bottom-0 max-h-[16rem] md:max-h-[24rem] object-contain"
             />
           </div>
@@ -328,6 +330,7 @@ products built to perform.`}
             <img
               src={whyWorkWithUs3}
               alt="landing-why work with us-image-2"
+              loading="lazy"
               className="md:absolute right-0 bottom-0 max-h-[16rem] md:max-h-[22rem] object-contain"
             />
           </div>
@@ -352,6 +355,7 @@ products built to perform.`}
             </div>
             <img
               src={whyWorkWithUs4}
+              loading="lazy"
               alt="landing-why work with us-image-3"
               className="md:absolute right-0 bottom-0 max-h-[16rem] md:max-h-[22rem] object-contain"
             />

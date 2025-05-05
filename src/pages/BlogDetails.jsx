@@ -10,6 +10,7 @@ const BlogDetails = () => {
         <img
           data-aos="fade-up"
           src={img}
+          loading="lazy"
           className="rounded-xl w-full aspect-video md:aspect-[16/7] object-cover"
           alt="blog banner-image"
         />

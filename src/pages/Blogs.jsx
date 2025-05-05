@@ -20,6 +20,7 @@ const Blogs = () => {
                 <img
                   src={item.img}
                   alt={`blog-section-image${i}`}
+                  loading="lazy"
                   className="group-hover:brightness-90 h-[15rem] max-h-[15rem] object-cover w-full rounded-xl transition-all duration-300"
                 />
               </Link>
