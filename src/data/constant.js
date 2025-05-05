@@ -1,5 +1,5 @@
 import { CodeXml, NotebookPen, Rocket } from "lucide-react";
-import logo from "../assets/logo/logo.jpg";
+import logo from "../assets/logo/logo.webp";
 // porfolio image
 // Import all images at the top (Web Development)
 import FiveGHomesImg from "../assets/web-development-portfolio/5ghomes.png";
