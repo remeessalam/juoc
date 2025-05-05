@@ -56,12 +56,17 @@ const JoinHappyCustomers = () => {
     >
       <div className="absolute top-0 w-full h-full bg-black/35"></div>
       <div className="relative z-10">
-        <div data-aos="fade-up" className="wrapper">
+        <div data-aos="fade-up" data-aos-offset="-800" className="wrapper">
           <h2 className="heading-2 max-w-[60rem] mx-auto text-center">
             Join Our <span className="text-primary/80">100+</span> Happy Clients
           </h2>
         </div>
-        <div data-aos="fade-up" ref={sliderRef} className="keen-slider mt-9">
+        <div
+          data-aos="fade-up"
+          data-aos-offset="-800"
+          ref={sliderRef}
+          className="keen-slider mt-9"
+        >
           {[img1, img2, img3, img4, img5, img6, img7].map((img, index) => (
             <div
               key={index}
