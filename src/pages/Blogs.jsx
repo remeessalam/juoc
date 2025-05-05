@@ -16,7 +16,7 @@ const Blogs = () => {
               data-aos="fade-up"
               className="group space-y-2 p-5 rounded-xl border border-black/20"
             >
-              <Link to={item.link}>
+              <Link to={item.link} target="_blank" rel="noopener noreferrer">
                 <img
                   src={item.img}
                   alt={`blog-section-image${i}`}
@@ -25,7 +25,10 @@ const Blogs = () => {
                 />
               </Link>
               <Link
-                to={`/blogs/${i + 1}`}
+                // to={`/blogs/${i + 1}`}
+                to={item.link}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-lg font-semibold line-clamp-2 group-hover:text-purpleColor transition-all duration-300"
               >
                 {item.title}

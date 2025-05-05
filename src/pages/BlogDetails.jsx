@@ -1,5 +1,5 @@
 import React, { lazy } from "react";
-import img from "../assets/images/services/uiux1.jpg";
+import img from "../assets/images/services/uiux1.webp";
 
 const BlogsSection = lazy(() => import("../components/website/BlogsSection"));
 

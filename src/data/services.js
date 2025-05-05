@@ -21,9 +21,9 @@ export const services = [
       "Secure, transparent, and scalable blockchain solutions tailored to empower your business.",
     technologies: ["Ethereum", "Solidity", "Hyperledger", "Node.js", "React"],
     detailsPageImages: {
-      first: require("../assets/images/services/blockchain1.jpg"),
-      second: require("../assets/images/services/blockchain2.jpg"),
-      third: require("../assets/images/services/blockchain3.jpg"),
+      first: require("../assets/images/services/blockchain1.webp"),
+      second: require("../assets/images/services/blockchain2.webp"),
+      third: require("../assets/images/services/blockchain3.webp"),
     },
     html: {
       firstSection: `<h2 class="text-xl font-semibold mb-4">Unlock the Power of Blockchain Technology</h2>
@@ -57,9 +57,9 @@ export const services = [
       "Creating immersive, engaging, and dynamic gaming experiences for mobile, PC, and consoles.",
     technologies: ["Unity", "Unreal Engine", "C#", "Blender", "JavaScript"],
     detailsPageImages: {
-      first: require("../assets/images/services/gamedevelopment1.jpg"),
-      second: require("../assets/images/services/gamedevelopment2.jpg"),
-      third: require("../assets/images/services/gamedevelopment3.jpg"),
+      first: require("../assets/images/services/gamedevelopment1.webp"),
+      second: require("../assets/images/services/gamedevelopment2.webp"),
+      third: require("../assets/images/services/gamedevelopment3.webp"),
     },
     html: {
       firstSection: `<h2 class="text-xl font-semibold mb-4">Transforming Your Vision into Immersive Gaming Experiences</h2>
@@ -93,9 +93,9 @@ export const services = [
       "Developing intuitive and powerful mobile apps for iOS, Android, and cross-platform solutions.",
     technologies: ["React Native", "Flutter", "Swift", "Kotlin", "Xamarin"],
     detailsPageImages: {
-      first: require("../assets/images/services/appdevelopment1.jpg"),
-      second: require("../assets/images/services/appdevelopment2.jpg"),
-      third: require("../assets/images/services/appdevelopment3.jpg"),
+      first: require("../assets/images/services/appdevelopment1.webp"),
+      second: require("../assets/images/services/appdevelopment2.webp"),
+      third: require("../assets/images/services/appdevelopment3.webp"),
     },
     html: {
       firstSection: `<h2 class="text-xl font-semibold mb-4">Empowering Your Business with Robust Mobile Solutions</h2>
@@ -135,9 +135,9 @@ export const services = [
       "Power Automate",
     ],
     detailsPageImages: {
-      first: require("../assets/images/services/rpa1.jpg"),
-      second: require("../assets/images/services/rpa2.jpg"),
-      third: require("../assets/images/services/rpa3.jpg"),
+      first: require("../assets/images/services/rpa1.webp"),
+      second: require("../assets/images/services/rpa2.webp"),
+      third: require("../assets/images/services/rpa3.webp"),
     },
     html: {
       firstSection: `<h2 class="text-xl font-semibold mb-4">Streamline Your Operations with Intelligent Automation</h2>
@@ -170,9 +170,9 @@ export const services = [
       "Integrating intelligent AI solutions to transform decision-making and enhance customer engagement.",
     technologies: ["TensorFlow", "PyTorch", "Keras", "scikit-learn", "OpenCV"],
     detailsPageImages: {
-      first: require("../assets/images/services/aidevelopment1.jpg"),
-      second: require("../assets/images/services/aidevelopment2.jpg"),
-      third: require("../assets/images/services/aidevelopment3.jpg"),
+      first: require("../assets/images/services/aidevelopment1.webp"),
+      second: require("../assets/images/services/aidevelopment2.webp"),
+      third: require("../assets/images/services/aidevelopment3.webp"),
     },
     html: {
       firstSection: `<h2 class="text-xl font-semibold mb-4">Harness the Power of Artificial Intelligence</h2>
@@ -205,9 +205,9 @@ export const services = [
       "Leveraging advanced machine learning models to unlock actionable insights from your data.",
     technologies: ["Python", "scikit-learn", "TensorFlow", "PyTorch", "Keras"],
     detailsPageImages: {
-      first: require("../assets/images/services/machinelearning1.jpg"),
-      second: require("../assets/images/services/machinelearning2.jpg"),
-      third: require("../assets/images/services/machinelearning3.jpg"),
+      first: require("../assets/images/services/machinelearning1.webp"),
+      second: require("../assets/images/services/machinelearning2.webp"),
+      third: require("../assets/images/services/machinelearning3.webp"),
     },
     html: {
       firstSection: `<h2 class="text-xl font-semibold mb-4">Unlock the Potential of Your Data with Machine Learning</h2>
@@ -240,9 +240,9 @@ export const services = [
       "Scalable, secure, and cost-effective cloud solutions designed to power your business growth.",
     technologies: ["AWS", "Azure", "Google Cloud", "Docker", "Kubernetes"],
     detailsPageImages: {
-      first: require("../assets/images/services/cloudcomputing1.jpg"),
-      second: require("../assets/images/services/cloudcomputing2.jpg"),
-      third: require("../assets/images/services/cloudcomputing3.jpg"),
+      first: require("../assets/images/services/cloudcomputing1.webp"),
+      second: require("../assets/images/services/cloudcomputing2.webp"),
+      third: require("../assets/images/services/cloudcomputing3.webp"),
     },
     html: {
       firstSection: `<h2 class="text-xl font-semibold mb-4">Empowering Your Business with Scalable Cloud Solutions</h2>
@@ -275,9 +275,9 @@ export const services = [
       "Building responsive, scalable, and modern websites tailored to your business needs.",
     technologies: ["React", "Angular", "Node", "Express", "MongoDB"],
     detailsPageImages: {
-      first: require("../assets/images/services/webdevelopment1.jpg"),
-      second: require("../assets/images/services/webdevelopment2.jpg"),
-      third: require("../assets/images/services/webdevelopment3.jpg"),
+      first: require("../assets/images/services/webdevelopment1.webp"),
+      second: require("../assets/images/services/webdevelopment2.webp"),
+      third: require("../assets/images/services/webdevelopment3.webp"),
     },
     html: {
       firstSection: `<h2 class="text-xl font-semibold mb-4">
@@ -372,9 +372,9 @@ export const services = [
       "Unlocking valuable insights from your data through advanced analytics and visualization techniques.",
     technologies: ["Python", "R", "SQL", "Pandas", "Tableau"],
     detailsPageImages: {
-      first: require("../assets/images/services/datascience1.jpg"),
-      second: require("../assets/images/services/datascience2.jpg"),
-      third: require("../assets/images/services/datascience3.jpg"),
+      first: require("../assets/images/services/datascience1.webp"),
+      second: require("../assets/images/services/datascience2.webp"),
+      third: require("../assets/images/services/datascience3.webp"),
     },
     html: {
       firstSection: `<h2 class="text-xl font-semibold mb-4">Transform Your Data into Strategic Insights</h2>
@@ -407,9 +407,9 @@ export const services = [
       "Developing intelligent NLP solutions to automate customer interactions and derive insights from text data.",
     technologies: ["NLTK", "spaCy", "BERT", "GPT", "Transformers"],
     detailsPageImages: {
-      first: require("../assets/images/services/nlp1.jpg"),
-      second: require("../assets/images/services/nlp2.jpg"),
-      third: require("../assets/images/services/nlp3.jpg"),
+      first: require("../assets/images/services/nlp1.webp"),
+      second: require("../assets/images/services/nlp2.webp"),
+      third: require("../assets/images/services/nlp3.webp"),
     },
     html: {
       firstSection: `<h2 class="text-xl font-semibold mb-4">Empower Your Business with Intelligent Language Solutions</h2>
@@ -442,9 +442,9 @@ export const services = [
       "End-to-end cloud migration services to ensure a smooth and secure transition for your business.",
     technologies: ["AWS", "Azure", "Google Cloud", "VMware", "Docker"],
     detailsPageImages: {
-      first: require("../assets/images/services/cloudmigration1.jpg"),
-      second: require("../assets/images/services/cloudmigration2.jpg"),
-      third: require("../assets/images/services/cloudmigration3.jpg"),
+      first: require("../assets/images/services/cloudmigration1.webp"),
+      second: require("../assets/images/services/cloudmigration2.webp"),
+      third: require("../assets/images/services/cloudmigration3.webp"),
     },
     html: {
       firstSection: `<h2 class="text-xl font-semibold mb-4">Seamless Transition to the Cloud</h2>
@@ -477,9 +477,9 @@ export const services = [
       "Designing visually appealing and user-friendly interfaces that enhance engagement and drive results.",
     technologies: ["Sketch", "Adobe XD", "Figma", "InVision", "Zeplin"],
     detailsPageImages: {
-      first: require("../assets/images/services/uiux1.jpg"),
-      second: require("../assets/images/services/uiux2.jpg"),
-      third: require("../assets/images/services/uiux3.jpg"),
+      first: require("../assets/images/services/uiux1.webp"),
+      second: require("../assets/images/services/uiux2.webp"),
+      third: require("../assets/images/services/uiux3.webp"),
     },
     html: {
       firstSection: `<h2 class="text-xl font-semibold mb-4">Crafting Exceptional Digital Experiences with User-Centric Design</h2>
