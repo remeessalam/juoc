@@ -157,7 +157,7 @@ const ContactForm = ({ headline, id }) => {
           onSubmit={handleSubmit(handleFormSubmit)}
           className="grid grid-cols-1 gap-4 mt-7"
         >
-          <div className="grid lg:grid-cols-2 gap-5">
+          <div className="grid lg:grid-cols-1 gap-5">
             <div className="">
               <input
                 type="text"
@@ -172,14 +172,14 @@ const ContactForm = ({ headline, id }) => {
               />
               <small className="text-primary">{errors.name?.message}</small>
             </div>
-            <div className="">
+            {/* <div className="">
               <input
                 type="text"
                 className="placeholder:text-white outline-none p-2 bg-transparent border-b w-full"
                 placeholder="Company Name (Optional)"
                 {...register("company")}
               />
-            </div>
+            </div> */}
           </div>
 
           <div className="">
@@ -252,14 +252,14 @@ const ContactForm = ({ headline, id }) => {
             )}
           </div>
 
-          <div className="">
+          {/* <div className="">
             <textarea
               className="placeholder:text-white outline-none p-2 bg-transparent border-b w-full"
               placeholder="Message"
               {...register("message")}
             />
             <small className="text-primary">{errors.message?.message}</small>
-          </div>
+          </div> */}
 
           {/* Google reCAPTCHA */}
           <div className="mt-4">
@@ -275,7 +275,7 @@ const ContactForm = ({ headline, id }) => {
               disabled={isSubmitting}
               className="btn rounded bg-white text-black w-full hover:bg-primary hover:text-white hover:shadow-primary/20"
             >
-              Send Message
+              Send
             </button>
           </div>
         </form>

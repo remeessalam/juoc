@@ -8,11 +8,11 @@ import { X } from "lucide-react";
 import { companyDetails, logo } from "../../data/constant";
 
 const links = [
-  {
-    name: "Home",
-    path: "/",
-    scroll: false,
-  },
+  // {
+  //   name: "Home",
+  //   path: "/",
+  //   scroll: false,
+  // },
   // {
   //   name: "About Us",
   //   path: "about",

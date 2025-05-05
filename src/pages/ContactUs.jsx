@@ -200,7 +200,7 @@ const ContactUs = () => {
               data-aos="fade-up"
               className="mt-10 p-5 sm:p-7 flex flex-col bg-gradient-to-r from-[#f9ece6] to-[#a4b5c5] rounded-xl"
             >
-              <div className="grid md:grid-cols-2 gap-5">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                 <div>
                   <input
                     type="text"
@@ -280,7 +280,7 @@ const ContactUs = () => {
                     {errors.phone?.message}
                   </small>
                 </div> */}
-                <div>
+                {/* <div>
                   <input
                     type="text"
                     className="placeholder:text-black/80 text-black p-3 bg-white outline-none w-full rounded-md"
@@ -290,9 +290,9 @@ const ContactUs = () => {
                   <small className="text-red-500">
                     {errors.subject?.message}
                   </small>
-                </div>
+                </div> */}
                 {/* Services Dropdown */}
-                <div className="bg-white rounded-md p-1  w-full md:col-span-2">
+                <div className="bg-white rounded-md p-1   w-full ">
                   <select
                     className="placeholder:text-black text-black outline-none p-2 bg-transparent  w-full"
                     {...register("service")}
@@ -320,7 +320,7 @@ const ContactUs = () => {
                     </div>
                   )}
                 </div>
-                <div className="md:col-span-2">
+                {/* <div className="md:col-span-2">
                   <textarea
                     className="placeholder:text-black/80 text-black p-3 bg-white outline-none w-full rounded-md"
                     placeholder="Message"
@@ -330,22 +330,24 @@ const ContactUs = () => {
                   <small className="text-red-500">
                     {errors.message?.message}
                   </small>
-                </div>
+                </div> */}
                 {/* Google reCAPTCHA */}
-                <div className="mt-4">
-                  <ReCAPTCHA
-                    ref={recaptchaRef}
-                    sitekey="6Le7rwsrAAAAAGlbC7u0RziGOymN53Z1AsEjbeCw"
-                    onChange={onCaptchaChange}
-                  />
+                <div className="w-full flex md:flex-row flex-col justify-between md:col-span-2">
+                  <div className="mt-4">
+                    <ReCAPTCHA
+                      ref={recaptchaRef}
+                      sitekey="6Le7rwsrAAAAAGlbC7u0RziGOymN53Z1AsEjbeCw"
+                      onChange={onCaptchaChange}
+                    />
+                  </div>
+                  <button
+                    disabled={isSubmitting}
+                    className="btn rounded-full bg-white text-black hover:shadow-white/50 w-full sm:w-fit self-end mt-5"
+                  >
+                    Send
+                  </button>
                 </div>
               </div>
-              <button
-                disabled={isSubmitting}
-                className="btn rounded-full bg-white text-black hover:shadow-white/50 w-full sm:w-fit self-end mt-5"
-              >
-                Send Message
-              </button>
             </form>
           </div>
         </div>
