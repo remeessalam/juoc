@@ -19,7 +19,7 @@ const Blogs = () => {
               <Link to={item.link}>
                 <img
                   src={item.img}
-                  alt=""
+                  alt={`blog-section-image${i}`}
                   className="group-hover:brightness-90 h-[15rem] max-h-[15rem] object-cover w-full rounded-xl transition-all duration-300"
                 />
               </Link>

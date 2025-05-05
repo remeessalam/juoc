@@ -78,7 +78,7 @@ const BlogsSection = () => {
           >
             <img
               src={item.img}
-              alt=""
+              alt={`blog-${i}`}
               className="w-full rounded-xl max-h-[20rem] h-[20rem]"
             />
             <h6 className="text-lg font-semibold line-clamp-2">{item.title}</h6>

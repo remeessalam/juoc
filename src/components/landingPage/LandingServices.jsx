@@ -27,7 +27,7 @@ const LandingServices = ({ isWeb }) => {
               <img
                 src={item.image}
                 className="absolute inset-0 -z-10 h-full w-full object-cover"
-                alt=""
+                alt={`service-image ${item.title}`}
               />
               <div className="relative z-10 grid sm:grid-cols-[60%_auto] h-full items-center gap-4">
                 <div className="h-full flex flex-col gap-3 justify-between">

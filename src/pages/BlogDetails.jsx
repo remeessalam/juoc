@@ -11,7 +11,7 @@ const BlogDetails = () => {
           data-aos="fade-up"
           src={img}
           className="rounded-xl w-full aspect-video md:aspect-[16/7] object-cover"
-          alt=""
+          alt="blog banner-image"
         />
         <h1 data-aos="fade-up" className="section-heading mt-7">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non
