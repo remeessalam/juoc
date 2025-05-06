@@ -4,8 +4,7 @@ import Drawer from "react-modern-drawer";
 import { Divide as Hamburger } from "hamburger-react";
 import "react-modern-drawer/dist/index.css";
 import { X } from "lucide-react";
-import { companyDetails, logo } from "../../data/constant";
-
+import logo from "../../assets/logo/logo.webp";
 const links = [
   {
     name: "Home",
@@ -83,14 +82,14 @@ const Header = () => {
         direction="right"
         className="z-10 p-2"
       >
-        <div className="mb-6 flex items-center justify-between px-[.7rem] py-[.4rem]">
-          <img
+        <div className="mb-6 flex items-center justify-end px-[.7rem] py-[.4rem]">
+          {/* <img
             src={logo}
             width="auto"
             height="auto"
             alt="logo"
             className="h-[2.5rem] object-contain"
-          />
+          /> */}
           <button onClick={() => setIsOpen(false)}>
             <X size={28} />
           </button>
