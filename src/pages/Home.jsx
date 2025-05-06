@@ -103,7 +103,10 @@ const Home = () => {
               <CodeXml className="inline mr-2" />{" "}
               <span>Blockchain, AI & Development Solutions</span>
             </div>
-            <h1 data-aos="fade-up" className="heading text-white">
+            <h1
+              // data-aos="fade-up"
+              className="heading text-white"
+            >
               Welcome to <span className="">JUOC Solutions LLP – </span>
               <br />
               <span className="text-secondary">
