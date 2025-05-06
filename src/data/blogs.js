@@ -1,43 +1,7 @@
-// import blog1 from "../assets/blogs/blog1.jpg";
-// import blog2 from "../assets/blogs/blog2.jpg";
-// import blog3 from "../assets/blogs/blog3.jpg";
-// import blog4 from "../assets/blogs/blog4.jpg";
-// import blog5 from "../assets/blogs/blog5.jpg";
-// import blog6 from "../assets/blogs/blog6.jpg";
-// import blog7 from "../assets/blogs/blog7.jpg";
-// import blog8 from "../assets/blogs/blog8.jpg";
-// import blog9 from "../assets/blogs/blog9.jpg";
-// import blog10 from "../assets/blogs/blog10.jpg";
-// import blog11 from "../assets/blogs/blog11.jpg";
-// import blog12 from "../assets/blogs/blog12.jpg";
-// import blog13 from "../assets/blogs/blog13.jpg";
-// import blog14 from "../assets/blogs/blog14.jpg";
-// import blog15 from "../assets/blogs/blog15.jpg";
-// import blog16 from "../assets/blogs/blog16.jpg";
-// import blog17 from "../assets/blogs/blog17.jpg";
-// import blog18 from "../assets/blogs/blog18.jpg";
-// import blog19 from "../assets/blogs/blog19.jpg";
-// import blog20 from "../assets/blogs/blog20.jpg";
-// import blog21 from "../assets/blogs/blog21.jpg";
-// import blog22 from "../assets/blogs/blog22.jpg";
-// import blog23 from "../assets/blogs/blog23.jpg";
-// import blog24 from "../assets/blogs/blog24.jpg";
-// import blog25 from "../assets/blogs/blog25.jpg";
-// import blog26 from "../assets/blogs/blog26.jpg";
-// import blog27 from "../assets/blogs/blog27.jpg";
-// import blog28 from "../assets/blogs/blog28.jpg";
-// import blog29 from "../assets/blogs/blog29.jpg";
-// import blog30 from "../assets/blogs/blog30.jpg";
-// import blog31 from "../assets/blogs/blog31.jpg";
-// import blog32 from "../assets/blogs/blog32.jpg";
-// import blog33 from "../assets/blogs/blog33.jpg";
-// import blog34 from "../assets/blogs/blog34.jpg";
-// import blog35 from "../assets/blogs/blog35.jpg";
-
 export const blogs = [
   {
     id: 1,
-    img: require("../assets/blogs/blog1.jpg"),
+    img: require("../assets/blogs/blog1.webp"),
     link: "https://juocsolutionsblog.blogspot.com/2025/03/ai-beyond-automation-transforming.html",
     title:
       "AI Beyond Automation: Transforming Industries with Intelligent Innovation",
@@ -45,7 +9,7 @@ export const blogs = [
   },
   {
     id: 2,
-    img: require("../assets/blogs/blog2.jpg"),
+    img: require("../assets/blogs/blog2.webp"),
     link: "https://juocsolutionsblog.blogspot.com/2025/02/the-future-of-ai-transforming.html",
     title:
       "The Future of AI: Transforming Industries with Intelligent Solutions",
@@ -53,7 +17,7 @@ export const blogs = [
   },
   {
     id: 3,
-    img: require("../assets/blogs/blog3.jpg"),
+    img: require("../assets/blogs/blog3.webp"),
     link: "https://juocsolutionsblog.blogspot.com/2025/02/digital-transformation-how-juoc.html",
     title:
       "Digital Transformation: How JUOC Solutions is Shaping the Future of Businesses",
@@ -61,56 +25,56 @@ export const blogs = [
   },
   {
     id: 4,
-    img: require("../assets/blogs/blog4.jpg"),
+    img: require("../assets/blogs/blog4.webp"),
     link: "https://juocsolutionsblog.blogspot.com/2025/02/juoc-solutions-transforming-businesses.html",
     title: "JUOC Solutions – Transforming Businesses with Smart Technology",
     desc: "In an era where technology is reshaping the way businesses operate, JUOC Solutions stands at the forefront of digital transformation. We specialize in providing cutting-edge solutions that help businesses thrive in the modern world. With a commitment to innovation, security, and scalability, we empower organizations to streamline operations, enhance customer experiences, and achieve sustainable growth.",
   },
   {
     id: 5,
-    img: require("../assets/blogs/blog5.jpg"),
+    img: require("../assets/blogs/blog5.webp"),
     link: "https://juocsolutionsblog.blogspot.com/2025/01/juoc-solutions-your-digital.html",
     title: "JUOC Solutions: Your Digital Transformation Partner",
     desc: "In a rapidly evolving digital landscape, the need for innovative, efficient, and tailored solutions is more critical than ever. JUOC Solutions stands at the forefront of this transformation, enabling businesses across industries to adapt, grow, and thrive with technology at their core.",
   },
   {
     id: 6,
-    img: require("../assets/blogs/blog6.jpg"),
+    img: require("../assets/blogs/blog6.webp"),
     link: "https://juocsolutionsblog.blogspot.com/2025/01/juoc-solutions-innovating-beyond.html",
     title: "JUOC Solutions: Innovating Beyond Boundaries",
     desc: "In an era defined by rapid technological advancements, businesses must not only adapt but also innovate to stay ahead. JUOC Solutions emerges as a trusted partner, empowering enterprises with transformative solutions tailored to the demands of a digital-first world.",
   },
   {
     id: 7,
-    img: require("../assets/blogs/blog7.jpg"),
+    img: require("../assets/blogs/blog7.webp"),
     link: "https://juocsolutionsblog.blogspot.com/2025/01/juoc-solutions-empowering-businesses.html",
     title: "JUOC Solutions: Empowering Businesses for a Digital Future",
     desc: "In today’s fast-paced, technology-driven world, businesses need innovative solutions to stay competitive and thrive. JUOC Solutions is proud to be at the forefront of this transformation, delivering cutting-edge technology and tailored strategies that drive success and foster global impact.",
   },
   {
     id: 8,
-    img: require("../assets/blogs/blog8.jpg"),
+    img: require("../assets/blogs/blog8.webp"),
     link: "https://juocsolutionsblog.blogspot.com/2025/01/juoc-solutions-driving-excellence-in.html",
     title: "JUOC Solutions: Driving Excellence in the Digital Era",
     desc: " In a world where technology defines success, JUOC Solutions stands at the forefront of innovation, delivering transformative solutions tailored to the unique needs of businesses. With an unwavering commitment to excellence, we empower organizations to navigate the complexities of the digital age with confidence and agility.",
   },
   {
     id: 9,
-    img: require("../assets/blogs/blog9.jpg"),
+    img: require("../assets/blogs/blog9.webp"),
     link: "https://juocsolutionsblog.blogspot.com/2025/01/transforming-tomorrow-juoc-solutions.html",
     title: "Transforming Tomorrow: The JUOC Solutions Difference",
     desc: "In the ever-evolving digital landscape, businesses face constant challenges to adapt, innovate, and excel. At JUOC Solutions, we believe in not just keeping up with the pace of change but driving it forward. With a unique blend of innovation, expertise, and client-centric values, we are empowering businesses globally to unlock their true potential.",
   },
   {
     id: 10,
-    img: require("../assets/blogs/blog10.jpg"),
+    img: require("../assets/blogs/blog10.webp"),
     link: "https://juocsolutionsblog.blogspot.com/2025/01/juoc-solutions-pioneering-future-of.html",
     title: "JUOC Solutions: Pioneering the Future of Technology-Driven Success",
     desc: "In a rapidly evolving digital world, staying ahead requires more than just adapting; it demands innovation, foresight, and expertise. JUOC Solutions is at the forefront of this transformation, enabling businesses to thrive through tailor-made technology solutions and a commitment to excellence...",
   },
   {
     id: 11,
-    img: require("../assets/blogs/blog11.jpg"),
+    img: require("../assets/blogs/blog11.webp"),
     link: "https://juocsolutionsblog.blogspot.com/2025/01/juoc-solutions-driving-business-success.html",
     title:
       "JUOC Solutions: Driving Business Success Through Innovative Technology",
@@ -118,7 +82,7 @@ export const blogs = [
   },
   {
     id: 12,
-    img: require("../assets/blogs/blog12.jpg"),
+    img: require("../assets/blogs/blog12.webp"),
     link: "https://juocsolutionsblog.blogspot.com/2025/01/juoc-solutions-empowering-global.html",
     title:
       "JUOC Solutions: Empowering Global Businesses with Cutting-Edge Digital Innovation",
@@ -126,7 +90,7 @@ export const blogs = [
   },
   {
     id: 13,
-    img: require("../assets/blogs/blog13.jpg"),
+    img: require("../assets/blogs/blog13.webp"),
     link: "https://juocsolutionsblog.blogspot.com/2024/12/juoc-solutions-empowering-sustainable.html",
     title:
       "JUOC Solutions: Empowering a Sustainable Digital Future for Businesses",
@@ -134,7 +98,7 @@ export const blogs = [
   },
   {
     id: 14,
-    img: require("../assets/blogs/blog14.jpg"),
+    img: require("../assets/blogs/blog14.webp"),
     link: "https://juocsolutionsblog.blogspot.com/2024/12/juoc-solutions-pioneering-excellence-in.html",
     title:
       "JUOC Solutions: Pioneering Excellence in a Digitally Connected World",
@@ -142,7 +106,7 @@ export const blogs = [
   },
   {
     id: 15,
-    img: require("../assets/blogs/blog15.jpg"),
+    img: require("../assets/blogs/blog15.webp"),
     link: "https://juocsolutionsblog.blogspot.com/2024/12/driving-innovation-with-juoc-solutions.html",
     title:
       "Driving Innovation with JUOC Solutions: Transforming Challenges into Opportunities",
@@ -150,7 +114,7 @@ export const blogs = [
   },
   {
     id: 16,
-    img: require("../assets/blogs/blog16.jpg"),
+    img: require("../assets/blogs/blog16.webp"),
     link: "https://juocsolutionsblog.blogspot.com/2024/12/juoc-solutions-redefining-digital.html",
     title:
       "JUOC Solutions: Redefining Digital Transformation for Global Success",
@@ -158,7 +122,7 @@ export const blogs = [
   },
   {
     id: 17,
-    img: require("../assets/blogs/blog17.jpg"),
+    img: require("../assets/blogs/blog17.webp"),
     link: "https://juocsolutionsblog.blogspot.com/2024/12/juoc-solutions-empowering-businesses_15.html",
     title:
       "JUOC Solutions: Empowering Businesses, Shaping a Sustainable Future",
@@ -166,7 +130,7 @@ export const blogs = [
   },
   {
     id: 18,
-    img: require("../assets/blogs/blog18.jpg"),
+    img: require("../assets/blogs/blog18.webp"),
     link: "https://juocsolutionsblog.blogspot.com/2024/12/juoc-solutions-pioneering-innovation.html",
     title:
       "JUOC Solutions: Pioneering Innovation and Empowering Global Businesses",
@@ -174,7 +138,7 @@ export const blogs = [
   },
   {
     id: 19,
-    img: require("../assets/blogs/blog19.jpg"),
+    img: require("../assets/blogs/blog19.webp"),
     link: "https://juocsolutionsblog.blogspot.com/2024/12/juoc-solutions-driving-innovation_12.html",
     title:
       "JUOC Solutions: Driving Innovation, Empowering Businesses, Shaping the Future",
@@ -182,21 +146,21 @@ export const blogs = [
   },
   {
     id: 20,
-    img: require("../assets/blogs/blog20.jpg"),
+    img: require("../assets/blogs/blog20.webp"),
     link: "https://juocsolutionsblog.blogspot.com/2024/12/juoc-solutions-innovating-today.html",
     title: "JUOC Solutions: Innovating Today, Transforming Tomorrow",
     desc: "JUOC Solutions: Transforming Businesses, Shaping the Future In today’s rapidly evolving technological landscape, businesses require more than just solutions—they need partners who understand their challenges, anticipate trends, and deliver results that matter. JUOC Solutions is that partner, driving innovation, growth, and transformation for businesses of all sizes. Who We Are At JUOC Solutions , we are more than a technology service provider. We are visionaries dedicated to bridging the gap between ambition and achievement. Our mission is to empower businesses with the tools, strategies, and innovations they need to thrive in a constantly changing world. With a focus on creating meaningful impact, we combine technology with strategy to address challenges across industries. Whether it’s improving operational efficiency or crafting solutions that resonate globally, JUOC Solutions is committed to excellence. Our Vision: Building for Tomorrow Technology is the engine of progress, a...",
   },
   {
     id: 21,
-    img: require("../assets/blogs/blog21.jpg"),
+    img: require("../assets/blogs/blog21.webp"),
     link: "https://juocsolutionsblog.blogspot.com/2024/12/juoc-solutions-empowering-businesses_10.html",
     title: "JUOC Solutions: Empowering Businesses with Innovation and Purpose",
     desc: "JUOC Solutions: Pioneering the Future of Business Innovation In an era where technology evolves faster than ever, businesses face the constant challenge of staying competitive while fostering sustainable growth. JUOC Solutions emerges as a trusted partner, bridging the gap between technological potential and real-world business needs. Through innovation, dedication, and a vision for the future, we empower businesses globally to thrive in today’s digital-first economy. A New Era of Technology and Growth At JUOC Solutions , we believe that innovation isn’t just a tool—it’s a mindset. Our mission is to transform the way businesses operate by integrating advanced technology with a deep understanding of market dynamics. We aim to redefine industries, uplift communities, and create lasting impact through our tailored solutions. Our Distinctive Features Adaptive Innovation: We leverage the latest advancements in AI, data science, and cloud computing to create scalable solutions that e...",
   },
   {
     id: 22,
-    img: require("../assets/blogs/blog22.jpg"),
+    img: require("../assets/blogs/blog22.webp"),
     link: "https://juocsolutionsblog.blogspot.com/2024/12/juoc-solutions-driving-innovation.html",
     title:
       "JUOC Solutions: Driving Innovation, Empowering Businesses, and Shaping a Better Future",
@@ -204,7 +168,7 @@ export const blogs = [
   },
   {
     id: 23,
-    img: require("../assets/blogs/blog23.jpg"),
+    img: require("../assets/blogs/blog23.webp"),
     link: "https://juocsolutionsblog.blogspot.com/2024/12/juoc-solutions-empowering-businesses.html",
     title:
       "JUOC Solutions: Empowering Businesses with Innovative Technology and Future-Ready Services",
@@ -212,7 +176,7 @@ export const blogs = [
   },
   {
     id: 24,
-    img: require("../assets/blogs/blog24.jpg"),
+    img: require("../assets/blogs/blog24.webp"),
     link: "https://juocsolutionsblog.blogspot.com/2024/12/empowering-businesses-with-data-science.html",
     title:
       "Empowering Businesses with Data Science: How JUOC Solutions Delivers Transformative Insights",
@@ -220,7 +184,7 @@ export const blogs = [
   },
   {
     id: 25,
-    img: require("../assets/blogs/blog25.jpg"),
+    img: require("../assets/blogs/blog25.webp"),
     link: "https://juocsolutionsblog.blogspot.com/2024/12/innovating-business-models-through-ai.html",
     title:
       "Innovating Business Models through AI Solutions: JUOC Solutions Leading the Charge",
@@ -228,7 +192,7 @@ export const blogs = [
   },
   {
     id: 26,
-    img: require("../assets/blogs/blog26.jpg"),
+    img: require("../assets/blogs/blog26.webp"),
     link: "https://juocsolutionsblog.blogspot.com/2024/12/future-of-technology-and-business_15.html",
     title:
       "Future of Technology and Business: JUOC Solutions' Vision for a Better Tomorrow",
@@ -236,7 +200,7 @@ export const blogs = [
   },
   {
     id: 27,
-    img: require("../assets/blogs/blog27.jpg"),
+    img: require("../assets/blogs/blog27.webp"),
     link: "https://juocsolutionsblog.blogspot.com/2024/12/ai-and-digital-transformation-driving.html",
     title:
       "AI and Digital Transformation: Driving Business Success in a Connected World",
@@ -244,7 +208,7 @@ export const blogs = [
   },
   {
     id: 28,
-    img: require("../assets/blogs/blog28.jpg"),
+    img: require("../assets/blogs/blog28.webp"),
     link: "https://juocsolutionsblog.blogspot.com/2024/12/juoc-solutions-delivering-value-to.html",
     title:
       "JUOC Solutions: Delivering Value to Clients with Cutting-Edge Technology Solutions",
@@ -252,7 +216,7 @@ export const blogs = [
   },
   {
     id: 29,
-    img: require("../assets/blogs/blog29.jpg"),
+    img: require("../assets/blogs/blog29.webp"),
     link: "https://juocsolutionsblog.blogspot.com/2024/12/the-importance-of-business-automation.html",
     title:
       "The Importance of Business Automation: How JUOC Solutions is Leading the Way",
@@ -260,7 +224,7 @@ export const blogs = [
   },
   {
     id: 30,
-    img: require("../assets/blogs/blog30.jpg"),
+    img: require("../assets/blogs/blog30.webp"),
     link: "https://juocsolutionsblog.blogspot.com/2024/12/business-innovation-and-growth-driving.html",
     title:
       "Business Innovation and Growth: How JUOC Solutions is Helping Businesses Flourish",
@@ -268,7 +232,7 @@ export const blogs = [
   },
   {
     id: 31,
-    img: require("../assets/blogs/blog31.jpg"),
+    img: require("../assets/blogs/blog31.webp"),
     link: "https://juocsolutionsblog.blogspot.com/2024/11/revolutionizing-communication-with-nlp.html",
     title:
       "Revolutionizing Communication with NLP: Why JUOC Solutions LLP is Your Ideal Partner",
@@ -276,7 +240,7 @@ export const blogs = [
   },
   {
     id: 32,
-    img: require("../assets/blogs/blog32.jpg"),
+    img: require("../assets/blogs/blog32.webp"),
     link: "https://juocsolutionsblog.blogspot.com/2024/11/revolutionizing-businesses-with.html",
     title:
       "Revolutionizing Businesses with Blockchain: Why JUOC Solutions LLP is Your Trusted Partner",
@@ -284,14 +248,14 @@ export const blogs = [
   },
   {
     id: 33,
-    img: require("../assets/blogs/blog33.jpg"),
+    img: require("../assets/blogs/blog33.webp"),
     link: "https://juocsolutionsblog.blogspot.com/2024/11/empowering-connectivity-iot-development.html",
     title: "Empowering Connectivity: IoT Development with JUOC Solutions",
     desc: "The Transformative Power of IoT Development: Why JUOC Solutions Leads the Way In today’s hyper-connected world, the Internet of Things (IoT) is revolutionizing industries, empowering businesses, and enhancing everyday lives. By enabling devices to communicate, collect, and exchange data, IoT transforms ordinary systems into intelligent ecosystems. At JUOC Solutions, we harness the potential of IoT to deliver tailored, high-impact solutions that drive innovation and efficiency. Why IoT Matters in Today’s World IoT bridges the gap between the digital and physical realms, creating seamless interconnectivity. Here’s why IoT is pivotal: Enhanced Automation: IoT simplifies workflows, enabling devices to automate tasks, saving time and resources. Data-Driven Decisions: Smart devices generate real-time insights, allowing businesses to make informed decisions. Cost Optimization: By monitoring and managing resources effectively, IoT helps reduce operational expenses. Personalized Expe...",
   },
   {
     id: 34,
-    img: require("../assets/blogs/blog34.jpg"),
+    img: require("../assets/blogs/blog34.webp"),
     link: "https://juocsolutionsblog.blogspot.com/2024/11/empowering-innovation-transforming.html",
     title:
       "Empowering Innovation: Transforming Businesses with AI Development by JUOC Solutions",
@@ -299,7 +263,7 @@ export const blogs = [
   },
   {
     id: 35,
-    img: require("../assets/blogs/blog35.jpg"),
+    img: require("../assets/blogs/blog35.webp"),
     link: "https://juocsolutionsblog.blogspot.com/2024/11/empowering-businesses-through-cutting.html",
     title:
       "Empowering Businesses Through Cutting-Edge Mobile App Development with JUOC Solutions",
