@@ -66,6 +66,15 @@ html {
   }
 }
 
+.logo {
+  height: 3.5rem;
+  object-fit: contain;
+}
+@media (min-width: 1024px) {
+  .logo {
+    height: 5rem;
+  }
+}
 /* loading spinner styles */
 .spinner-parent {
   display: flex;
