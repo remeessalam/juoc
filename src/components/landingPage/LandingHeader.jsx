@@ -26,22 +26,22 @@ const LandingHeader = () => {
   return (
     <div className="fixed top-0 left-0 py-4 z-50 w-full backdrop-blur-sm bg-white">
       <div className="flex wrapper items-center gap-8 justify-between">
-        <Scroll
+        {/* <Scroll
           to="banner"
           spy
           smooth
           duration={1000}
           className="cursor-pointer"
-        >
-          <img
-            loading="lazy"
-            src={logo}
-            alt="logo"
-            width="75"
-            height="75"
-            className="h-[3.5rem] lg:h-[5rem] object-contain"
-          />
-        </Scroll>
+        > */}
+        <img
+          loading="lazy"
+          src={logo}
+          alt="logo"
+          width="75"
+          height="75"
+          className="h-[3.5rem] lg:h-[5rem] object-contain"
+        />
+        {/* </Scroll> */}
         <div className="hidden lg:flex items-center gap-10">
           {links.map((link) =>
             link.scroll ? (
