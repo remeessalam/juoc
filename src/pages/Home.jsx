@@ -97,7 +97,7 @@ const Home = () => {
         <div className="pt-[12rem] pb-[5rem]">
           <div className="wrapper flex flex-col gap-7 justify-center h-full">
             <div
-              data-aos="fade-up"
+              // data-aos="fade-up"
               className="flex items-center text-start self-start text-white px-3 py-2 rounded-full border border-white"
             >
               <CodeXml className="inline mr-2" />{" "}
@@ -111,7 +111,7 @@ const Home = () => {
               </span>
             </h1>
             <div
-              data-aos="fade-up"
+              // data-aos="fade-up"
               className="grid sm:grid-cols-2 gap-5 md:gap-14 mt-5"
             >
               {bannerServices.map((item) => (

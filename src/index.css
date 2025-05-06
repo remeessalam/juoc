@@ -38,7 +38,7 @@ html {
     @apply max-w-[85rem] mx-auto px-4 sm:px-6;
   }
   .heading {
-    @apply text-[2.25rem] md:text-7xl font-semibold leading-snug;
+    @apply text-[1.85rem] md:text-7xl font-semibold leading-snug;
   }
   .heading-2 {
     @apply text-[1.75rem] md:text-5xl font-semibold leading-snug;
