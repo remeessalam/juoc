@@ -8,7 +8,7 @@ import { ArrowScrollButton } from "../ArrowButtons";
 const LandingServices = ({ isWeb }) => {
   const services = isWeb ? webDevelopmentServices : appDevelopmentServices;
   return (
-    <div id="services" className="py-[4rem] wrapper">
+    <div className="py-[4rem] wrapper">
       <h2 data-aos="fade-up" className="section-heading text-center">
         {isWeb
           ? "Our Web Development Services"

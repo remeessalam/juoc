@@ -6,7 +6,7 @@ import { ArrowLinkButton } from "../ArrowButtons";
 
 const ServicesWeProvide = ({ title }) => {
   return (
-    <div className="py-[4rem] wrapper">
+    <div id="services" className="py-[4rem] wrapper">
       <h2 data-aos="fade-up" className="section-heading text-center">
         {title && title} Services We Provide
       </h2>
