@@ -120,7 +120,7 @@ const Home = () => {
                   className="p-5 rounded-xl bg-secondary/60 backdrop-blur-md lg:hover:bg-primary/60 text-white space-y-4 transition-all duration-300"
                 >
                   <p className="text-xl font-medium">{item.title}</p>
-                  <p className="min-h-[6rem]">{item.desc}</p>
+                  <p className="text-base">{item.desc}</p>
                   <div className="flex justify-between items-center gap-5">
                     <item.icon className="w-14 h-14 fill-white" />
                     <Link
